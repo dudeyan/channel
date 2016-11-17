@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <div class="col-lg-12 manage-content">
+                <p class="col-lg-12 store-server">五折特惠卡-选择日期</p>
+
+                <div class="col-lg-12 add-merchan half-card-content">
+                    <div class="col-lg-12 text-center f-toe half-shop-name">美食荟萃火锅</div>
+                    <div class="col-lg-12" style="margin-bottom: 8px;">本月：<span class="red">15日，</span><span class="red">19日，</span>有设置五折卡</div>
+                    <div class="pull-left timingCon">
+                        <div class="col-lg-12 timing"></div><!-- 时间选择器 位置 -->
+                        <div class="col-lg-12 text-center add-time-btn">
+                            <button class="add-btn">添加</button>
+                        </div>
+                    </div>
+
+                    <div class="pull-right half-shop">
+                        <div class="col-lg-12 text-center time-title"><!-- title -->
+                            <p class="col-lg-12">2016年3月14日</p>
+                            <p class="col-lg-12">所有提供五折优惠的商家</p>
+                        </div>
+                        <ul class="col-lg-12 half-shop-list"><!-- 列表 -->
+                            <li class="col-lg-12 half-shops red">
+                                <p class="pull-left f-toe half-shops-name">coco奶茶</p>
+                                <p class="pull-left">休闲</p>
+                                <a class="pull-right del-half-shops"><i class="iconfont">&#xe61f;</i></a>
+                            </li>
+                            <li class="col-lg-12 half-shops">
+                                <p class="pull-left f-toe half-shops-name">小丽养生会所</p>
+                                <p class="pull-left">丽人</p>
+                                <a class="pull-right del-half-shops"><i class="iconfont">&#xe61f;</i></a>
+                            </li>
+                            <li class="col-lg-12 half-shops">
+                                <p class="pull-left f-toe half-shops-name">胖子鱼</p>
+                                <p class="pull-left">火锅</p>
+                                <a class="pull-right del-half-shops"><i class="iconfont">&#xe61f;</i></a>
+                            </li>
+                        </ul>
+                        <div class="col-lg-12 text-center add-time-btn">
+                            <button class="add-btn">添加</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 batch-half">
+                        <p class="col-lg-12 size-16">已批量设置的活动日期：</p>
+                        <p class="col-lg-12">
+                            <span class="pull-left">2016-05-20至2016-10-30</span>
+                            <span class="pull-left m-l-thirty">每月10号</span>
+                            <a class="pull-right td-a">删除</a>
+                        </p>
+                        <p class="col-lg-12">
+                            <span class="pull-left">2016-05-20至2016-10-30</span>
+                            <span class="pull-left m-l-thirty">每周二</span>
+                            <a class="pull-right td-a">删除</a>
+                        </p>
+                        <p class="col-lg-12">
+                            <span class="pull-left">2016-05-20至2016-10-30</span>
+                            <span class="pull-left m-l-thirty">每周二</span>
+                            <a class="pull-right td-a">删除</a>
+                        </p>
+                    </div>
+
+                    <!-- 添加商家层 begin -->
+                    <div class="row prom half-add-shop ">
+                        <div class="col-lg-12 piece-head text-center">添加商家<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                        <p class="col-lg-12 half-name f-toe">店铺：云咖啡</p>
+                        <p class="col-lg-12 half-name f-toe">
+                            <span class="pull-left">活动标题：</span>
+                            <input type="text" class="inputs pull-left" placeholder="请输入标题">
+                        </p>
+                        <p class="col-lg-12 half-name f-toe">
+                            <span class="pull-left">生效日期：</span>
+                            <input type="text" class="inputs pull-left down-jt" placeholder="开始日期" style="width: 130px;">
+                            <span class="pull-left hori">—</span>
+                            <input type="text" class="inputs pull-left down-jt" placeholder="结束日期" style="width: 130px;">
+                        </p>
+                        <div class="col-lg-12 half-name sucai_ul">
+                            <span class="pull-left">复制日期：</span>
+                            <div class="pull-left">
+                                <div class="col-lg-12">
+                                    <span class="pull-left red">13号</span>
+                                    <input type="checkbox" class="pull-left check-box" checked placeholder="">
+                                    <span class="pull-left">按日期复制</span>
+                                </div>
+                                <div class="col-lg-12">
+                                    <span class="pull-left red">周一</span>
+                                    <input type="checkbox" class="pull-left check-box" placeholder="" style="margin-left: 13px;">
+                                    <span class="pull-left">按周复制</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-center">
+                            <button class="btn btn-theme del-btn">确认添加</button>
+                        </p>
+                    </div>
+                    <!-- 添加商家层 end -->
+
+                </div>
+
+                <div class="col-lg-12 add-merchan share-input dis-none" style="border-top: 10px solid #f3f3f3;">
+                    <ul class="col-lg-12 col-md-12">
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">每天提供五折次数：</label>
+                            <input type="text" class="pull-left inputs inputs-money" placeholder=""/>
+                            <span class="pull-left m-l-ten">次/天</span>
+                            <span class="pull-left gray">（注：不填默认无限制）</span>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">每月提供五折次数：</label>
+                            <input type="text" class="pull-left inputs inputs-money" placeholder=""/>
+                            <span class="pull-left m-l-ten">次/月</span>
+                            <span class="pull-left gray">（注：不填默认无限制）</span>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">五折优惠详情：</label>
+                            <textarea class="pull-left inputs textarea" placeholder=""></textarea>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 add-merchan share-input">
+                    <button class="btns inputs">保存</button>
+                </div>
+
+            </div><!-- 分享设置 end -->
+
+        </div><!-- right-content end -->
+
+    </div><!-- content end -->
+
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</html>

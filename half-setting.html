@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <div class="col-lg-12 manage-content">
+                <p class="col-lg-12 store-server">
+                    五折特惠卡-设置
+                    <a href="#" class="pull-right"><button class="btn search" style="width: 120px;">五折卡设置教程</button></a>
+                </p>
+
+                <div class="col-lg-12 add-merchan add-red">
+                    <ul class="col-lg-12">
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name label-vip">五折卡：<p class="dimensions">600*450PX</p></label>
+                            <p class="pull-left vip-img">
+                                <img src="images/bg.png">
+                            </p>
+                            <button class="up-pics">
+                                <i class="iconfont">&#xe628;</i>
+                            </button>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">发卡者：</label>
+                            <input class="pull-left inputs" placeholder="">
+                            <p class="col-lg-12 hot-prom">温馨提示：最好填写您微信公众平台的名称</p>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name privilege">五折特权：</label>
+                            <textarea class="pull-left inputs textarea" placeholder=""></textarea>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name" style="width: 230px; font-size: 16px; margin-left: 95px;">五折特惠卡收费标准设置：</label>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">周卡：</label>
+                            <span class="text-center symbol">￥</span>
+                            <input type="number" placeholder="不填不显示" class="inputs inputs-money" style="padding-left: 36px;">&nbsp;元
+                            <span class="gray">（7天）</span>
+                            <div class="pull-right m-r-hun">
+                                <button class="btn btn-default half-btn pull-left">隐藏</button>
+                                <span class="pull-left">限购：</span>
+                                <input type="number" placeholder="" class="inputs inputs-money" style="width: 80px;">&nbsp;次/人
+                            </div>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">月卡：</label>
+                            <span class="text-center symbol">￥</span>
+                            <input type="number" placeholder="不填不显示" class="inputs inputs-money" style="padding-left: 36px;">&nbsp;元
+                            <span class="gray">（1个月）</span>
+                            <div class="pull-right m-r-hun">
+                                <button class="btn btn-default half-btn pull-left">隐藏</button>
+                                <span class="pull-left">限购：</span>
+                                <input type="number" placeholder="" class="inputs inputs-money" style="width: 80px;">&nbsp;次/人
+                            </div>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">半年卡：</label>
+                            <span class="text-center symbol">￥</span>
+                            <input type="number" placeholder="不填不显示" class="inputs inputs-money" style="padding-left: 36px;">&nbsp;元
+                            <span class="gray">（6个月）</span>
+                            <div class="pull-right m-r-hun">
+                                <button class="btn btn-default half-btn pull-left">隐藏</button>
+                                <span class="pull-left">限购：</span>
+                                <input type="number" placeholder="" class="inputs inputs-money" style="width: 80px;">&nbsp;次/人
+                            </div>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">年卡：</label>
+                            <span class="text-center symbol">￥</span>
+                            <input type="number" placeholder="不填不显示" class="inputs inputs-money" style="padding-left: 36px;">&nbsp;元
+                            <span class="gray">（12个月）</span>
+                            <div class="pull-right m-r-hun">
+                                <button class="btn btn-default half-btn pull-left act">已隐藏</button>
+                                <span class="pull-left">限购：</span>
+                                <input type="number" placeholder="" class="inputs inputs-money" style="width: 80px;">&nbsp;次/人
+                            </div>
+                        </li>
+
+                        <!-- 使用量隐藏时 -->
+                        <li class="col-lg-12">
+                            <button class="btn btn-default" style="margin-left: 200px;">使用量已隐藏</button>
+                            <span>点击显示使用量</span>
+                        </li>
+
+                        <!-- 使用量显示时 -->
+                        <li class="col-lg-12">
+                            <button class="btn btn-default useNum act" style="margin-left: 200px;">使用量已显示</button>
+                            <span>点击隐藏使用量</span>
+                        </li>
+
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name" style="width: 230px; font-size: 16px; margin-left: 95px;">五折卡首页分享设置：</label>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name label-vip">五折卡：<p class="dimensions">200*200PX</p></label>
+                            <p class="pull-left">
+                                <img src="images/bg.png" width="150" height="150">
+                            </p>
+                            <button class="up-pics">
+                                <i class="iconfont">&#xe628;</i>
+                            </button>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">分享标题：</label>
+                            <input type="number" placeholder="" class="inputs">
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">分享简介：</label>
+                            <input type="number" placeholder="" class="inputs">
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-12 add-merchan">
+                    <button class="btns inputs red-btn">保存</button>
+                </div>
+            </div>
+
+            <div class="prom del-prom " id="pitchExplain" style="margin-top: -104px; margin-left: -169px; display: none;">
+                <p class="del-shop-word text-center set-word">设置成功！</p>
+            </div>
+
+            <!-- 提示 begin -->
+            <div class="prom del-prom dis-none">
+                <div class="piece-head text-center"><button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="cert-word text-center">
+                    请至少填写一项五折特惠卡收费标准！
+                </p>
+            </div>
+            <!-- 提示 end -->
+
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</body>
+</html>

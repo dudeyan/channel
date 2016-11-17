@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <title>渠道管理中心</title>
+
+  <!-- css begin-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+  <!-- header begin header.html -->
+  <header class="row" id="header"></header>
+  <!-- header end -->
+
+  <!-- 内容 begin -->
+  <div class="content row">
+
+    <!-- left-menu begin left.html -->
+    <div class="pull-left left-menu" id="left"></div>
+    <!-- left-menu end -->
+
+    <!-- right-content begin -->
+    <div class="pull-left right-content">
+
+      <div class="col-lg-12 manage-content">
+        <p class="col-lg-12 store-server">特产商城-添加产品</p>
+
+        <div class="col-lg-12 add-merchan">
+          <ul class="col-lg-12 col-md-12">
+            <li class="col-lg-12 col-md-12">
+              <label class="pull-left text-right label-name"><span class="red">*</span>商品名称：</label>
+              <input type="text" placeholder="请填写商品名称" class="pull-left inputs">
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name"><span class="red">*</span>原价：</label>
+              <span class="text-center symbol">￥</span>
+              <input type="number" placeholder="请填写金额" class="inputs inputs-money" style="padding-left: 36px;">&nbsp;元
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name"><span class="red">*</span>优惠价：</label>
+              <span class="text-center symbol">￥</span>
+              <input type="number" placeholder="请填写金额" class="inputs inputs-money" style="padding-left: 36px;">&nbsp;元
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name"><span class="red">*</span>佣金：</label>
+              <input type="number" placeholder="请填写金额" class="inputs inputs-money">&nbsp;%
+              <span class="col-lg-12 size-12 gray" style="padding-left: 180px; margin:-5px 0 -15px;">佣金0.2元</span>
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name"><span class="red">*</span>商品数量：</label>
+              <input type="number" placeholder="请填写数量" class="inputs inputs-money">
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name"><span class="red">*</span>店铺ID：</label>
+              <input type="number" placeholder="" class="inputs inputs-money">
+            </li>
+            <li class="col-lg-12 col-md-12">
+              <label class="pull-left text-right label-name"><span class="red">*</span>分类：</label>
+              <select class="pull-left inputs inputs-money down-jt">
+                <option class="pull-left" value="">美食</option>
+                <option class="pull-left" value="">美食</option>
+                <option class="pull-left" value="">美食</option>
+                <option class="pull-left" value="">美食</option>
+              </select>
+              <span class="pull-left hori">—</span>
+              <select class="pull-left inputs inputs-money down-jt">
+                <option class="pull-left" value="">美食</option>
+              </select>
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name boss-name">商品图片：<p class="refund-way line-twenty" style="margin-top: -35px; margin-right: 8px;">600*450px</p></label>
+              <span class="pull-left relese">
+                  <img src="images/6.jpg" alt="" class="bus-pro-pic"/>
+                  <button class="del del-city-pic"><i class="iconfont"></i></button>
+              </span>
+              <span class="pull-left relese">
+                  <img src="images/6.jpg" alt="" class="bus-pro-pic"/>
+                  <button class="del del-city-pic"><i class="iconfont"></i></button>
+              </span>
+              <button class="pull-left up-pics boss-up"><i class="iconfont">&#xe628;</i></button>
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name">邮费：</label>
+              <span class="text-center symbol">￥</span>
+              <input type="number" placeholder="请填写金额" class="inputs inputs-money" style="padding-left: 36px;">&nbsp;元（不填则默认包邮,偏远地区除外）
+            </li>
+            <li class="col-lg-12"><!-- 预留 可先不做 -->
+              <div class="col-lg-12">
+                <label class="pull-left text-right label-name">规格：</label>
+                <input type="text" placeholder="" class="pull-left inputs inputs-money">
+                <label class="pull-left text-right label-name">优惠价：</label>
+                <input type="text" placeholder="" class="pull-left inputs inputs-money">&nbsp;元
+              </div>
+              <p class="col-lg-12 m-t-ten p-r-ten" style="padding-right: 120px">
+                <button class="iconfont pull-right plus-btn">&#xe633;</button>
+                <button class="iconfont pull-right plus-btn">&#xe632;</button>
+              </p>
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name">详情：</label>
+              <table id="table-list" class="inputs text-center mer-table">
+                <thead>
+                <tr><th>名称</th><th width="150">数量</th><th width="150">单位</th><th width="150">单价/元</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><input type="text" name="menu" ng-model="menu1" placeholder="商品/优惠内容" class="ng-pristine ng-untouched ng-valid"></td>
+                  <td><input type="number" name="number" ng-model="number1" placeholder="如：1" class="ng-pristine ng-untouched ng-valid"></td>
+                  <td><input type="text" placeholder="如：份" name="unit" ng-model="unit1" class="ng-pristine ng-untouched ng-valid"></td>
+                  <td><input type="number" name="price" ng-model="price1" placeholder="如：100" class="ng-pristine ng-untouched ng-valid"></td>
+                </tr>
+                </tbody>
+              </table>
+              <p class="col-lg-12 m-t-ten" style="padding-right: 120px">
+                <button class="iconfont pull-right plus-btn">&#xe633;</button>
+                <button class="iconfont pull-right plus-btn">&#xe632;</button>
+              </p>
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name">产品介绍：</label>
+              <textarea placeholder="请输入岗位简介" class="pull-left inputs textarea"></textarea>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 add-merchan">
+          <button class="btns inputs">完成发布</button>
+        </div>
+      </div>
+    </div><!-- right-content end -->
+
+  </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+  $("#left").load("left.html");
+  $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</html>

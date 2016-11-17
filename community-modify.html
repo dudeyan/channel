@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <title>渠道管理中心</title>
+
+  <!-- css begin-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+  <!-- header begin header.html -->
+  <header class="row" id="header"></header>
+  <!-- header end -->
+
+  <!-- 内容 begin -->
+  <div class="content row">
+
+    <!-- left-menu begin left.html -->
+    <div class="pull-left left-menu" id="left"></div>
+    <!-- left-menu end -->
+
+    <!-- right-content begin -->
+    <div class="pull-left right-content">
+
+      <div class="col-lg-12 manage-content">
+        <p class="col-lg-12 store-server">社区-修改信息</p>
+
+        <div class="col-lg-12 add-merchan">
+          <ul class="col-lg-12 col-md-12">
+
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name">动态：</label>
+              <textarea placeholder="" class="pull-left inputs textarea"></textarea>
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name boss-name">商品图片：<p class="refund-way line-twenty" style="margin-top: -35px; margin-right: 8px;">480*300px</p></label>
+              <span class="pull-left relese">
+                  <img src="images/6.jpg" alt="" class="bus-pro-pic"/>
+                  <button class="del del-city-pic"><i class="iconfont"></i></button>
+              </span>
+              <button class="pull-left up-pics boss-up"><i class="iconfont">&#xe628;</i></button>
+            </li>
+            <li class="col-lg-12 col-md-12">
+              <label class="pull-left text-right label-name">分类：</label>
+              <select class="pull-left inputs inputs-money down-jt">
+                <option class="pull-left" value="">美食</option>
+                <option class="pull-left" value="">美食</option>
+                <option class="pull-left" value="">美食</option>
+                <option class="pull-left" value="">美食</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 add-merchan">
+          <button class="btns inputs">完成发布</button>
+        </div>
+      </div>
+    </div><!-- right-content end -->
+
+  </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+  $("#left").load("left.html");
+  $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</html>

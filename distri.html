@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <!-- manage-content begin -->
+            <div class="manage-content row">
+
+                <table class="col-lg-12 text-center manage-table one-height">
+                    <thead>
+                    <tr>
+                        <th width="378">分销商品</th>
+                        <th width="80">单价</th>
+                        <th width="80">收入比例</th>
+                        <th width="80">佣金</th>
+                        <th width="80">领取</th>
+                        <th width="80">使用</th>
+                        <th width="80">收入</th>
+                        <th width="80">店铺ID</th>
+                        <th width="60">修改</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="row p-l-ten p-r-ten">
+                                <img src="images/6.jpg" class="pull-left goods-pic" alt=""/>
+                                <div class="col-lg-12 text-left goods-word">
+                                    <p class="col-lg-12 goods-name">1元抢iphone6plus</p>
+                                    <p class="col-lg-12 link-p">
+                                        <label class="pull-left">推广链接：</label>
+                                        <a class="pull-left f-toe">
+                                            http://p.xshapp.com/#/region?area.html
+                                        </a>
+                                        <span class="pull-left">复制</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>￥58.00</td>
+                        <td>5%</td>
+                        <td>￥3</td>
+                        <td><a href="distri-data.html">15人</a></td>
+                        <td><a href="distri-data.html">15人</a></td>
+                        <td>30元</td>
+                        <td>
+                            <input class="text-center shop-id" type="number" placeholder=""/>
+                        </td>
+                        <td><a href="#">修改</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <!-- 修改单价 begin -->
+                <div class="prom text-center dis-none">
+                    <div class="piece-head">
+                        修改单价<button class="del"><i class="iconfont">&#xe61f;</i></button>
+                    </div>
+                    <p class="vip-price order-num"><span>单价：</span><input type="text" placeholder=""/></p>
+                    <button class="btn btn-theme del-btn m-b-ten">确定</button>
+                </div>
+                <!-- 修改单价 end -->
+
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+    </div>
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+
+</html>

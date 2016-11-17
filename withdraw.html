@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <title>渠道管理中心</title>
+
+  <!-- css begin-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+  <!-- header begin header.html -->
+  <header class="row" id="header"></header>
+  <!-- header end -->
+
+  <!-- 内容 begin -->
+  <div class="content row">
+
+    <!-- left-menu begin left.html -->
+    <div class="pull-left left-menu" id="left"></div>
+    <!-- left-menu end -->
+
+    <!-- right-content begin -->
+    <div class="pull-left right-content">
+
+      <!-- 绑定银行卡 begin -->
+      <div class="share-content row">
+        <div class="share-head col-lg-12">前端设置-提现</div>
+
+        <div class="col-lg-12 text-center">
+          <ul class="col-lg-12 share-set" style="margin-top: 60px;">
+            <li class="col-lg-12 withdraw-li">
+              <label class="col-lg-4 label-boxs">商户认证支付总金额：</label>
+
+              <p class="col-lg-8 text-left money">
+                <span class="moneys pull-left">0</span>
+                <span class="yuan">元</span>
+                <a class="iconfont error-diff ok-dui" style="margin-top: 0;">&#xe620;</a>
+              </p>
+              <!-- 简介 -->
+              <div class="tag pull-left col-lg-8">
+                区域简称：将出现在你用户领取成功以后提醒用户关注微信公众平台。
+                <div class="arrow"><em></em><span></span></div>
+              </div>
+              <!-- 简介 -->
+
+            </li>
+            <!-- 红色边框和背景 加 class="empty" 设置input value 为效果图文字 -->
+            <li class="col-lg-12 withdraw-li">
+              <label class="col-lg-4 label-boxs">可提现金额：</label>
+
+              <p class="col-lg-8 text-left money">
+                <span class="moneys">0</span>元<a href="withdraw-details.html" class="withdrawals">提现明细></a>
+                <span class="fee fees">（微信扣除0.6%的手续费）</span></p>
+            </li>
+            <li class="col-lg-12 withdraw-li">
+              <label class="col-lg-4 label-boxs">银行卡信息：</label>
+
+              <p class="col-lg-8 text-left bingding-bank">建设银行储蓄卡(0000)<a href="bingding-bank.html">修改银行卡></a></p>
+              <!--<p class="col-lg-8 text-left bingding-bank">你还没有绑定银行卡<a href="bingding-bank.html">马上绑定></a></p>-->
+            </li>
+            <li class="col-lg-12 withdraw-li">
+              <label class="col-lg-4 label-boxs">提现金额：</label>
+              <input type="text" class="col-lg-8 input-box" placeholder="" style="width: 240px;">
+              <span class="pull-left bingding-bank">&nbsp;&nbsp;元</span>
+
+              <p class="pull-left" style="margin: 45px 0 0 -270px;">（预计3日内到账）</p>
+            </li>
+            <li class="col-lg-12">
+              <a class="col-lg-4"></a>
+              <button class="col-lg-8 btn input-box btn-theme" style="width: 265px;">确认</button>
+            </li>
+
+            <!-- 注释内容 begin -->
+            <li class="col-xs-12 text-left note">
+              <p>注：</p>
+
+              <p>1.每笔订单<b>微信/支付宝</b>扣除千分之六（0.6%）的手续费。</p>
+
+              <p>2.结算时间：3日内。</p>
+
+              <div>3.退款：
+                <div class="refund">
+                  <p>微信零钱支付30分钟内完成。</p>
+
+                  <p>微信银行卡支付3个工作日内完成。</p>
+
+                  <p>支付宝正常情况下3个工作日内到账。</p>
+                </div>
+              </div>
+              <p>4.只有已消费完成的订单才能进行提现。</p>
+            </li>
+            <!-- 注释内容 end -->
+
+          </ul>
+        </div>
+      </div>
+      <!-- 绑定银行卡 end -->
+
+      <!-- 提现成功 begin -->
+      <div class="prom dis-none">
+        <div class="piece-head text-center">绑定
+          <button class="del"><i class="iconfont">&#xe61f;</i></button>
+        </div>
+        <p class="loca-success text-center bingding"><i class="iconfont">&#xe61a;</i>恭喜你，提现成功</p>
+
+        <p class="text-center to-withdraw"><a>查看我的营业厅</a></p>
+      </div>
+      <!-- 提现成功 begin -->
+
+      <!-- 提现失败 begin -->
+      <div class="prom dis-none">
+        <div class="piece-head text-center">
+          <button class="del"><i class="iconfont">&#xe61f;</i></button>
+        </div>
+        <p class="loca-success loca-errow text-center"><i class="iconfont">&#xe61b;</i>提现失败，请重试</p>
+      </div>
+      <!-- 提现失败 end -->
+
+    </div>
+    <!-- right-content end -->
+
+  </div>
+  <!-- 内容 end -->
+
+</div>
+<!-- container-fluid end -->
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+  $("#left").load("left.html");
+  $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+
+</body>
+</html>

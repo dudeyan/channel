@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <!-- manage-content begin -->
+            <div class="manage-content row">
+
+                <!-- 筛选 begin -->
+                <div class="filter">
+                    <div class="btn-content row">
+                        <button class="pull-left btns active">全部</button>
+                        <button class="pull-left btns">已认证</button>
+                        <button class="pull-left btns">未认证</button>
+                        <button class="pull-left btns">未审核</button>
+                        <button class="pull-left btns">五折卡</button>
+                        <input type="text" placeholder="" class="pull-left inputs">
+                        <button class="btn search">搜索</button>
+                        <a href="add-shop.html" class="pull-right"><button class="btn search">添加店铺</button></a>
+                    </div>
+                </div><!-- 筛选 end -->
+
+                <!-- 店铺列表/shop-list begin -->
+                <div class="shop-list row">
+                    <table class="col-lg-12 text-center manage-table">
+                        <thead>
+                            <tr>
+                                <th width="140">店铺图片</th>
+                                <th width="180">店铺名称</th>
+                                <th width="220">活动信息</th>
+                                <th width="220">营业额</th>
+                                <th width="100">
+                                    抽点<a class="iconfont doubt">&#xe62c;</a>
+                                    <!-- 抽点介绍 begin -->
+                                    <div class="tag pull-left add-tag snapshot-prom dis-none" style="right: 220px;">
+                                        <p class="int-title">此抽点仅对店铺新发布的商品有效。</p>
+                                        <div class="arrow arrows"><em></em><span></span></div>
+                                    </div>
+                                    <!-- 抽点介绍 end -->
+                                </th>
+                                <th width="120">店铺设置</th>
+                                <th width="90">店铺信息</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="shop-pic">
+                                    <p class="dis-inline f-toe">店铺ID：327746</p>
+                                    <img src="images/6.jpg">
+                                </td>
+                                <td>美味乐食汇</td>
+                                <td>
+                                    <a href="#" class="col-xs-6 goods">商品：15</a>
+                                    <a href="#" class="col-xs-6 goods-two">券：3</a>
+                                    <a href="#" class="col-xs-6 goods">秒杀：15</a>
+                                    <a href="#" class="col-xs-6 goods-two">抢宝：15</a>
+                                    <a href="#" class="col-xs-6 goods">抽奖：15</a>
+                                    <a href="#" class="col-xs-6 goods-two">拼图：15</a>
+                                    <a href="#" class="col-xs-6 goods">连连抽：15</a>
+                                    <a href="#" class="col-xs-6 goods-two">五折卡：15</a>
+                                </td>
+                                <td>
+                                    <p class="product">本月营业额：￥510.00</p>
+                                    <p class="product">总营业额：￥888888.00</p>
+                                    <p><a href="" class="moneyGet">无法退款金额>></a></p>
+                                    <p><a href="" class="moneyGet">查看更多>></a></p>
+                                </td>
+                                <td>
+                                    <input type="number" placeholder="" value="" class="snapshot text-center">%
+                                </td>
+                                <td>
+                                    <a href="#" class="view-more no-fillet shop-set">发布</a><a class="view-more no-fillet shop-set">审核</a><!-- 已审核 加上class act -->
+                                    <a href="#" class="view-more no-fillet shop-set">修改</a><a class="view-more no-fillet shop-set">删除</a>
+                                    <a class="view-more no-fillet rec-shop">推荐：无</a>
+                                </td>
+                                <td>
+                                    <a class="view-more no-fillet">查看</a>
+                                    <a class="view-more no-fillet">认证</a><!-- 已审核 加上class certified -->
+                                    <a href="half-card.html" class="view-more no-fillet half-card">五折卡</a><!-- 已设置 加上class certified -->
+                                    <a class="view-more no-fillet" style="padding: 4px 0">修改密码</a>
+                                </td>
+                            </tr>
+                            <tr class="back-fafbff">
+                                <td class="shop-pic">
+                                    <p class="dis-inline f-toe">店铺ID：327746</p>
+                                    <img src="images/6.jpg">
+                                </td>
+                                <td>美味乐食汇</td>
+                                <td>
+                                    <a href="#" class="col-xs-6 goods">商品：15</a>
+                                    <a href="#" class="col-xs-6 goods-two">券：3</a>
+                                    <a href="#" class="col-xs-6 goods">秒杀：15</a>
+                                    <a href="#" class="col-xs-6 goods-two">抢宝：15</a>
+                                    <a href="#" class="col-xs-6 goods">抽奖：15</a>
+                                    <a href="#" class="col-xs-6 goods-two">拼图：15</a>
+                                    <a href="#" class="col-xs-6 goods">连连抽：15</a>
+                                    <a href="#" class="col-xs-6 goods-two">五折卡：15</a>
+                                </td>
+                                <td>
+                                    <p class="product">总营业额：￥888888.00</p>
+                                    <p class="product">当月金额：￥510.00</p>
+                                    <p><a href="" class="moneyGet">无法退款金额>></a></p>
+                                    <p><a href="" class="moneyGet">查看更多>></a></p>
+                                </td>
+                                <td>
+                                    <input type="number" placeholder="" value="" class="snapshot text-center">%
+                                </td>
+                                <td>
+                                    <a href="#" class="view-more no-fillet shop-set">发布</a><a class="view-more no-fillet shop-set act">审核</a><!-- 已审核 加上class act -->
+                                    <a href="#" class="view-more no-fillet shop-set">修改</a><a class="view-more no-fillet shop-set">删除</a>
+                                    <a class="view-more no-fillet rec-shop act">推荐：1</a>
+                                </td>
+                                <td>
+                                    <a class="view-more no-fillet">查看</a>
+                                    <a class="view-more no-fillet certified">认证</a><!-- 已审核 加上class certified -->
+                                    <a href="half-card.html" class="view-more no-fillet half-card certified">五折卡</a><!-- 已设置 加上class certified -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="shop-pic">
+                                    <img src="images/6.jpg">
+                                </td>
+                                <td>美味乐食汇</td>
+                                <td>
+                                    <a href="#" class="col-xs-6 goods">商品：15</a>
+                                    <a href="#" class="col-xs-6 goods-two">券：3</a>
+                                    <a href="#" class="col-xs-6 goods">秒杀：15</a>
+                                    <a href="#" class="col-xs-6 goods-two">抢宝：15</a>
+                                    <a href="#" class="col-xs-6 goods">抽奖：15</a>
+                                    <a href="#" class="col-xs-6 goods-two">拼图：15</a>
+                                    <a href="#" class="col-xs-6 goods">连连抽：15</a>
+                                    <a href="#" class="col-xs-6 goods-two">五折卡：15</a>
+                                </td>
+                                <td>
+                                    <p class="product">总营业额：￥888888.00</p>
+                                    <p class="product">当月金额：￥510.00</p>
+                                    <p><a href="" class="moneyGet">无法退款金额>></a></p>
+                                    <p><a href="" class="moneyGet">查看更多>></a></p>
+                                </td>
+                                <td>
+                                    <input type="number" placeholder="" value="" class="snapshot text-center">%
+                                </td>
+                                <td>
+                                    <a href="#" class="view-more no-fillet shop-set">发布</a><a class="view-more no-fillet shop-set act">审核</a><!-- 已审核 加上class act -->
+                                    <a href="#" class="view-more no-fillet shop-set">修改</a><a class="view-more no-fillet shop-set">删除</a>
+                                    <a class="view-more no-fillet rec-shop act">推荐：2</a>
+                                </td>
+                                <td>
+                                    <a class="view-more no-fillet">查看</a>
+                                    <a class="view-more no-fillet certified">认证</a><!-- 已审核 加上class certified -->
+                                    <a href="half-card.html" class="view-more no-fillet half-card certified">五折卡</a><!-- 已设置 加上class certified -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- 店铺列表/shop-list end -->
+
+                <ul ng-show="page.total > 0" class="list-inline pagination pull-right">
+                    <li ng-click="selectPage(1, 'first')" ng-show="page.currentPage > 1" class="pull-left">
+                        <a aria-label="Previous" class="paging-sh">首页</a>
+                    </li>
+                    <li ng-click="prevPage(page.currentPage)" ng-show="page.currentPage > 1">
+                        <a aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                    </li>
+                    <li ng-click="" class="pull-left">
+                        <input type="text" ng-change="selectPage(page.currentPage)" ng-model="page.currentPage" class="paging" style="width: 40px;height: 33px;line-height: 18px;margin-top: 1px;text-align: center;" />
+                    </li>
+
+                    <li ng-click="nextPage(page.currentPage)" ng-show="page.currentPage < page.pages">
+                        <a aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                    </li>
+
+                    <li ng-click="selectPage(page.pages, 'last')" ng-show="page.currentPage < page.pages" class="pull-left">
+                        <a aria-label="Previous" class="paging-sh">尾页</a>
+                    </li>
+                    <li class="pull-left add-merchan" style="padding: 0;">
+                        <select name="" id="" class="paging down-jt" style=" width: 55px;height: 33px;padding: 0 4px;line-height: 18px;margin-top: 1px;text-align: center;background-position: 36px;background-size: 12px;">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            <option value="">50</option>
+                            <option value="">80</option>
+                            <option value="">100</option>
+                        </select>
+                    </li>
+                    <li class="paging-all" style="line-height: 35px;">共{{page.pages}}页 / {{page.total}}条数据</li>
+                </ul>
+
+                <div class="row pull-right paging dis-none">
+                    <button class="pull-left shouye">首页</button>
+                    <button class="pull-left before"><i class="iconfont befores">&#xe61d;</i></button>
+                    <input type="text" value="1" class="pull-left paging-input text-center" placeholder="">
+                    <button class="pull-left before after"><i class="iconfont">&#xe61d;</i></button>
+                    <button class="pull-left shouye">尾页</button>
+                    <span class="pull-left">共9页/45条数据</span>
+                </div>
+
+            </div><!-- manage-content end -->
+
+            <div class="pop-up dis-none"></div><!-- 透明黑色层 -->
+
+            <!-- 认证提示层 begin -->
+            <div class="prom del-prom text-center dis-none">
+                <div class="piece-head">店铺认证<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="cert-word">确定认证店铺“店铺名称”？</p>
+                <button class="btn btn-theme del-btn">认证此店铺</button>
+            </div>
+            <!-- 认证提示层 end -->
+
+            <!-- 删除提示层 begin -->
+            <div class="prom del-prom dis-none">
+                <div class="piece-head text-center">删除<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="del-shop-word">店铺删除后店铺相关信息将永久消失。<br>确认删除此店铺？</p>
+                <p class="text-center"><button class="btn btn-theme del-btn">确定</button></p>
+            </div>
+            <!-- 删除提示层 end -->
+
+            <!-- 删除成功提示层 begin -->
+            <div class="prom succ-prom text-center dis-none">删除成功！</div>
+            <!-- 删除成功提示层 end -->
+
+            <!-- 店铺信息弹出层 begin -->
+            <div class="prom dis-none">
+                <div class="piece-head text-center">店铺信息<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <div class="dis-inline mentou"></div>
+                <div class="dis-inline speci">
+                    <p>店铺名称：优衣库</p>
+                    <p>负责人：小三子</p>
+                    <p>电话：1234564654</p>
+                    <p class="f-toe">地址：龙岗龙岗龙岗龙岗龙岗龙岗龙岗龙岗龙岗龙岗龙岗龙岗龙岗龙岗</p>
+                    <p>注册时间：2016-01-12</p>
+                </div>
+                <p class="pull-right m-r-ten m-t-ten m-l-ten">
+                    <img src="images/yy.jpg" alt="" width="100"/>
+                    <span class="dis-block size-12 gray text-center">收款二维码<br>右击另存图片</span>
+                </p>
+                <p class="shop-link">
+                    店铺链接：<a>http://m.xshapp.cn/shop/755684?city=sz&unid=10143</a>
+                    <span class="copy dis-none">已复制</span><!-- 复制成功后显示一下 然后消失 -->
+                </p>
+                <p class="edit-pass m-b-ten"><a href="#">修改账号密码</a></p>
+            </div>
+            <!-- 店铺信息弹出层 end -->
+
+            <!-- 推荐弹出层 begin -->
+            <div class="prom recommendCen codeCen dis-none">
+                <div class="piece-head text-center">推荐<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <div class="text-center prom-loca">
+                    <p>
+                        推荐到：第<input type="text" value="" class="text-center loca" placeholder="">位
+                        <a class="iconfont error-diff ok-dui" style="display: inline-block;"></a>
+                    </p>
+                    <p class="loca-ts">排序方式以推荐大小排列，如果大小一样以创建时间，点击次数，店铺ID降序排列。成功推荐的店铺将在首页优先显示。</p>
+                    <!--<p class="loca-repeat"><i class="iconfont">&#xe61e;</i>您已推荐过第2位</p>-->
+                    <button class="btn input-box btn-theme loca-btn">确定</button>
+                </div>
+                <p class="loca-success text-center dis-none"><i class="iconfont">&#xe61a;</i>推荐成功</p>
+                <p class="loca-success loca-errow text-center dis-none"><i class="iconfont">&#xe61b;</i>推荐失败</p>
+            </div>
+            <!-- 推荐弹出层 end -->
+
+        </div><!-- right-content end -->
+
+    </div><!-- content end -->
+
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+<script rel="script">
+    var addRippleEffect = function (e) {
+        var target = e.target;
+        if (target.tagName.toLowerCase() !== 'button')
+            return false;
+        var rect = target.getBoundingClientRect();
+        var ripple = target.querySelector('.ripple');
+        if (!ripple) {
+            ripple = document.createElement('span');
+            ripple.className = 'ripple';
+            ripple.style.height = ripple.style.width = Math.max(rect.width, rect.height) + 'px';
+            target.appendChild(ripple);
+        }
+        ripple.classList.remove('show');
+        var top = e.pageY - rect.top - ripple.offsetHeight / 2 - document.body.scrollTop;
+        var left = e.pageX - rect.left - ripple.offsetWidth / 2 - document.body.scrollLeft;
+        ripple.style.top = top + 'px';
+        ripple.style.left = left + 'px';
+        ripple.classList.add('show');
+        return false;
+    };
+    document.addEventListener('click', addRippleEffect, false);
+    //# sourceURL=pen.js
+</script>
+<!-- js end -->
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <!-- 分享设置 begin -->
+            <div class="share-content row">
+                <div class="share-head col-lg-12">联盟管理-站点信息</div>
+
+                <div class="col-lg-12 text-center">
+                    <ul class="col-lg-12 share-set">
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs" style="margin-top: 13px;">公众平台二维码：</label>
+                            <p class="pull-left">
+                                <img src="images/6.jpg" class="share-pic pull-left">
+                                <input type="file" class="pull-left input-file" placeholder="">
+                                <a class="pull-left file-pic">选择图片</a>
+                            </p>
+                            <p class="pull-left pic-gs">图片格式：jpg，200x200px</p>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs" style="margin-top: 13px;">客服二维码：</label>
+                            <p class="pull-left">
+                                <img src="images/6.jpg" class="share-pic pull-left">
+                                <input type="file" class="pull-left input-file" placeholder="">
+                                <a class="pull-left file-pic">选择图片</a>
+                            </p>
+                            <p class="pull-left pic-gs">图片格式：jpg，200x200px</p>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs">客服电话：</label>
+                            <input type="text" class="col-lg-8 input-box" placeholder="请在此输入">
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs">咨询QQ：</label>
+                            <input type="text" class="col-lg-8 input-box" placeholder="请在此输入">
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs">商户认证费用：</label>
+                            <input type="text" class="col-lg-8 input-box" placeholder="请在此输入">
+                        </li>
+                        <li class="col-lg-12">
+                            <a class="col-lg-4"></a><button class="col-lg-8 btn input-box btn-theme">确认修改</button>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- 分享设置 end -->
+
+            <!-- 修改成功 begin -->
+            <div class="prom dis-none">
+                <div class="piece-head text-center"><button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="loca-success text-center"><i class="iconfont">&#xe61a;</i>修改成功</p>
+            </div><!-- 修改成功 end -->
+
+            <!-- 修改失败 begin -->
+            <div class="prom dis-none">
+                <div class="piece-head text-center"><button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="loca-success loca-errow text-center"><i class="iconfont">&#xe61b;</i>修改失败</p>
+            </div><!-- 修改失败 end -->
+
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</body>
+</html>

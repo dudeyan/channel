@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+
+            <!-- 账户 begin -->
+            <div class="manage-content row">
+                <p class="col-lg-12 store-server">联盟管理-我的账户</p>
+
+                <div class="col-lg-12 account-money back-white">
+                    <p class="pull-left">账户总金额：<span class="moneys">￥888.00</span></p>
+                    <a href="recharge.html" class="pull-left"><button class="btn search">充值</button></a>
+                    <a href="withdraw.html" class="pull-left"><button class="btn search">提现</button></a>
+                </div>
+
+                <div class="col-lg-12 my-record back-white">
+
+                    <p class="col-lg-12 dis-none">交易记录</p>
+
+                    <div class="col-lg-12 sequence" style="padding-top: 0;padding-left: 0;">
+                        <div class="col-lg-12">
+                            <p class="pull-left">交易记录</p>
+                            <div class="pull-left btn-content receive-btn">
+                                <a class="pull-left act">全部</a>
+                                <a class="pull-left">无法退款</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12" style="margin-top: 5px;">
+                            <ul class="pull-left add-merchan">
+                                <li class="pull-left" style="margin-top:0; line-height: 32px; font-size: 14px;">
+                                    <label class="pull-left text-right label-name" style="width: 65px; line-height: 32px;font-size: 14px;">时间：</label>
+                                    <input class="pull-left inputs inputs-money down-jt" placeholder="开始日期" style="width: 140px;height: 32px;"/>
+                                    <span class="pull-left hori">—</span>
+                                    <input class="pull-left inputs inputs-money down-jt" placeholder="截止日期" style="width: 140px;height: 32px;"/>
+                                    <button class="pull-left btn account-sea" style="width: 60px; height: 32px; margin-left: 10px;">搜索</button>
+                                </li>
+                            </ul>
+                            <button class="pull-right btn search" style="width: 100px; height: 32px;">导出到Excel</button>
+                        </div>
+                        <p class="col-lg-12 m-t-ten size-12 gray">
+                            温馨提示：平台上的每笔入账微信会收取0.6%的手续费，该笔费用在入账时扣除，提现时平台不会再扣除任何手续费。
+                        </p>
+                    </div>
+                    <table class="col-lg-12 text-center buy-table">
+                        <thead>
+                        <tr>
+                            <th width="160">时间</th>
+                            <th width="80">金额</th>
+                            <th width="120">类别</th>
+                            <th>商品</th>
+                            <th width="200">银行信息</th>
+                            <th width="80">店铺名称</th>
+                            <th width="100">账户总余额</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>2016-01-22 12:00</td>
+                            <td>100</td>
+                            <td>提现</td>
+                            <td>/</td>
+                            <td>中国建设银行（4002）</td>
+                            <td>cov</td>
+                            <td>8265.29</td>
+                        </tr>
+                        <tr class="back-gray">
+                            <td>2016-01-22 12:00</td>
+                            <td>100</td>
+                            <td>提现</td>
+                            <td>/</td>
+                            <td>中国建设银行（4002）</td>
+                            <td class="cursor-p-c">cov</td>
+                            <td>8265.29</td>
+                        </tr>
+                        <tr>
+                            <td>2016-01-22 12:00</td>
+                            <td>100</td>
+                            <td>提现</td>
+                            <td>/</td>
+                            <td>中国建设银行（4002）</td>
+                            <td>cov</td>
+                            <td>8265.29</td>
+                        </tr>
+                        <tr class="back-gray">
+                            <td>2016-01-22 12:00</td>
+                            <td>100</td>
+                            <td>抽点</td>
+                            <td>超好喝奶茶一</td>
+                            <td>中国建设银行（4002）</td>
+                            <td>/</td>
+                            <td>8265.29</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div><!-- 账户 end -->
+
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+</body>
+</html>

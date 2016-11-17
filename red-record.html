@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <!-- right-content begin -->
+            <div class="pull-left right-content">
+
+                <!-- manage-content begin -->
+                <div class="manage-content row">
+                    <p class="col-lg-5 store-server">吸粉红包-查看红包</p>
+                    <div class="col-lg-7 filter">
+                        <div class="btn-content row" ng-show="checkData.moduleRole == 0">
+                            <button class="pull-right btns" ng-click="getRedPacketList(2)">已结束</button>
+                            <button class="pull-right btns" ng-click="getRedPacketList(1)">进行中</button>
+                            <button class="pull-right btns active" ng-click="getRedPacketList()">全部</button>
+                        </div>
+                        <!-- ngIf: checkData.moduleRole != 0 -->
+                    </div>
+
+                    <!-- 商品优惠领取使用列表 begin -->
+                    <div class="shop-list row">
+                        <table class="col-lg-12 text-center buy-table">
+                            <thead>
+                            <tr>
+                                <th width="180">发布日期</th>
+                                <th width="240">活动标题</th>
+                                <th width="100">红包金额</th>
+                                <th width="100">领取金额</th>
+                                <th width="100">领取总数量</th>
+                                <th width="100">新增粉丝</th>
+                                <th width="80">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2016-01-16 13:00</td>
+                                <td>小王是啥子</td>
+                                <td>1000</td>
+                                <td>120</td>
+                                <td>500</td>
+                                <td>300</td>
+                                <td>
+                                    <a href="#" class="by">修改</a>
+                                    <a class="red" ng-click="delRedPacket(redPacket.id)">删除</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="7" class="text-left red-link">111111</td>
+                            </tr>
+                            <tr>
+                                <td>2016-01-16 13:00</td>
+                                <td>小王是啥子</td>
+                                <td>1000</td>
+                                <td>120</td>
+                                <td>500</td>
+                                <td>300</td>
+                                <td><a href="#" class="by">修改</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- 商品优惠领取使用列表 end -->
+
+                    <div class="row pull-right paging">
+                        <button class="pull-left shouye">首页</button>
+                        <button class="pull-left before"><i class="iconfont befores">&#xe61d;</i></button>
+                        <input type="text" value="1" class="pull-left paging-input text-center" placeholder="">
+                        <button class="pull-left before after"><i class="iconfont">&#xe61d;</i></button>
+                        <button class="pull-left shouye">尾页</button>
+                        <span class="pull-left">共9页/45条数据</span>
+                    </div>
+
+                </div><!-- manage-content end -->
+
+                <!-- 删除提示层 begin -->
+                <div class="prom del-prom dis-none">
+                    <div class="piece-head text-center">删除<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                    <div class="del-shop-word">此红包总额为50元，用户已领取20元，<br>剩余<span class="size-24 red">35元</span>在红包删除后会返回到您<br>的联盟账户。</div>
+                    <p class="text-center"><button class="btn btn-theme del-btn m-t-ten">确定</button></p>
+                </div>
+                <!-- 删除提示层 end -->
+
+            </div>
+
+            </div><!-- right-content end -->
+
+        </div><!-- 内容 end -->
+
+    </div><!-- container-fluid end -->
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <div class="col-lg-12 manage-content">
+                <p class="col-lg-12 store-server">五折特惠卡-实体卡</p>
+
+                <div class="col-lg-12 back-white add-merchan entity">
+                    <p class="pull-left">
+                        种类：
+                        <select name="" id="" class="inputs inputs-money down-jt">
+                            <option value="">请选择卡得类型</option>
+                            <option value="">年卡</option>
+                        </select>
+                    </p>
+                    <p class="pull-left m-l-thirty">生成数量：<input type="text" placeholder="如：100" class="inputs inputs-money"/></p>
+                    <button class="pull-left m-l-thirty btn search" style="width: 100px;">批量生成</button>
+                </div>
+
+                <div class="col-lg-12 my-record entity-table back-white">
+                    <p class="pull-left" style="margin-top: 16px;">
+                        <input type="checkbox" class="check-box sel-input">
+                        <a class="elect-all">全选</a>
+                        <a class="select-all del-all">删除</a>
+                    </p>
+
+                    <div class="pull-right text-right">
+                        <button class="btn example-btn" style="width: 150px;">导出激活码到 Excel</button>
+                        <span class="dis-block gray p-r-ten" style="margin-bottom: 6px;font-size: 12px;">注：只能导出当前页面的数据</span>
+                    </div>
+
+                    <div class="col-lg-12 ">
+                        <table class="col-lg-6 text-center buy-table">
+                            <thead>
+                            <tr>
+                                <th width="160">序号</th>
+                                <th width="160">激活码</th>
+                                <th width="160">类别</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><input type="checkbox" class="check-box m-r-ten sel-input">1</td>
+                                <td>12346</td>
+                                <td>年卡</td>
+                            </tr>
+                            <tr class="back-gray">
+                                <td><input type="checkbox" class="check-box m-r-ten sel-input">3</td>
+                                <td>12346</td>
+                                <td>年卡</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="col-lg-6 text-center buy-table" style="margin-left: -1px;">
+                            <thead>
+                            <tr>
+                                <th width="160">序号</th>
+                                <th width="160">激活码</th>
+                                <th width="160">类别</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><input type="checkbox" class="check-box m-r-ten sel-input">2</td>
+                                <td>2654656</td>
+                                <td>年卡</td>
+                            </tr>
+                            <tr class="back-gray">
+                                <td><input type="checkbox" class="check-box m-r-ten sel-input">4</td>
+                                <td>2654656</td>
+                                <td>年卡</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div><!-- manage-content end -->
+
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</body>
+</html>

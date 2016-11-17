@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" media="screen and (min-width: 640px)" >
+    <link rel="stylesheet" type="text/css" href="css/mob-styles.css" media="screen and (max-width: 640px)">
+    <!-- css end-->
+
+</head>
+<body>
+    <!-- container-fluid begin -->
+    <div class="container-fluid row">
+
+        <!-- header begin -->
+        <header class="col-lg-12">
+            <div class="header row">
+                <a class="return dis-none"><img src="images/zjts.svg"></a>
+                <p class="pull-left city-logo"></p>
+                <p class="pull-left name">城市联盟管理后台</p>
+
+                <div class="pull-left city-pic sel-city dis-none"><!-- 鼠标移上去 加上 class="act" -->
+                    <div class="col-lg-12">
+                        <span class="pull-left">当前城市：</span>
+                        <p class="pull-left plase-city act">深圳<i class="iconfont">&#xe614;</i></p>
+                    </div>
+
+                    <!-- 选择城市 begin -->
+                    <div class="row city-content">
+                        <ul class="col-lg-12 back-white">
+                            <li class="col-lg-12">
+                                <span class="pull-left">A</span>
+                                <div class="pull-left city-list">
+                                    <div class="pull-left relative">
+                                        <a class="pull-left">安康</a>
+                                    </div>
+                                    <div class="pull-left relative">
+                                        <a class="pull-left">安康</a><!-- 有二级区域时 鼠标移上去 加上 class="twoAct" -->
+                                        <div class="row two-city dis-none">
+                                            <a class="pull-left">安康</a>
+                                            <a class="pull-left">安康</a>
+                                            <a class="pull-left">安康</a>
+                                            <a class="pull-left">安康</a>
+                                            <a class="pull-left">安康</a>
+                                        </div>
+                                    </div>
+                                    <div class="pull-left relative">
+                                        <a class="pull-left act">安康</a><!-- 没有二级区域 选择该城市时 class="act" -->
+                                    </div>
+                                    <div class="pull-left relative">
+                                        <a class="pull-left">安康</a>
+                                    </div>
+                                    <div class="pull-left relative">
+                                        <a class="pull-left">安康</a>
+                                    </div>
+                                    <div class="pull-left relative">
+                                        <a class="pull-left twoAct">安康</a><!-- 有二级区域时 鼠标移上去 加上 class="twoAct" -->
+                                        <div class="row two-city">
+                                            <a class="pull-left">安康</a>
+                                            <a class="pull-left">安康</a>
+                                            <a class="pull-left">安康</a>
+                                            <a class="pull-left">安康</a>
+                                            <a class="pull-left act">安康</a><!-- 选择二级区域 加上 class="act" -->
+                                        </div>
+                                    </div>
+                                    <div class="pull-left relative">
+                                        <a class="pull-left">安康</a>
+                                    </div>
+                                    <div class="pull-left relative">
+                                        <a class="pull-left">安康</a>
+                                    </div>
+                                    <div class="pull-left relative">
+                                        <a class="pull-left">安康</a>
+                                    </div>
+                                    <div class="pull-left relative">
+                                        <a class="pull-left">安康</a>
+                                    </div>
+                                    <div class="pull-left relative">
+                                        <a class="pull-left">安康</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-12">
+                                <span class="pull-left">B</span>
+                                <div class="pull-left city-list">
+                                    <div class="pull-left relative">
+                                        <a class="pull-left">保定</a>
+                                    </div>
+                                    <div class="pull-left relative">
+                                        <a class="pull-left">包头</a><!-- 有二级区域时 鼠标移上去 加上 class="twoAct" -->
+                                        <div class="row two-city dis-none">
+                                            <a class="pull-left">安康</a>
+                                            <a class="pull-left">安康</a>
+                                            <a class="pull-left">安康</a>
+                                            <a class="pull-left">安康</a>
+                                            <a class="pull-left">安康</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 选择城市 end -->
+
+            </div>
+        </header><!-- header end -->
+
+        <div class="col-lg-12 login-bj"></div>
+
+        <p class="enter-tip dis-none"></p><!-- 提示框 -->
+
+        <div class="login-module">
+
+            <!-- 登录 begin -->
+            <div class="col-lg-12 text-center denglu">
+                <p class="hint">城市联盟登录</p>
+                <!-- 错误提示 begin -->
+                <p class=" login-error text-left dis-none">
+                    <a href="#" class="iconfont">&#xe602;</a>用户名或密码错误，请重新输入
+                </p><!-- 错误提示 begin -->
+
+                <ul class="col-lg-12 group">
+                    <li class="col-lg-12">
+                        <label class="col-lg-4 label-box">用户名：</label>
+                        <input type="text" class="col-lg-8 input-box" placeholder="用户名/手机号码">
+                    </li><!-- 红色边框和背景 加 class="empty" 设置input value 为效果图文字 -->
+                    <li class="col-lg-12">
+                        <label class="col-lg-4 label-box">密码：</label>
+                        <input type="text" class="col-lg-8 input-box" placeholder="请输入密码">
+                    </li><!-- 红色边框 加 class="bor-error" -->
+                    <li class="col-lg-12 forgot"><a href="#">忘记密码</a></li>
+                    <li class="col-lg-12">
+                        <a href="index.html"><button class="col-lg-8 btn input-box btn-theme margin-l">登录</button></a>
+                    </li>
+                    <li class="col-lg-12 regis">
+                        <p class="input-box">不是联盟？<a>马上注册</a></p>
+                    </li>
+                </ul>
+            </div><!-- 登录 end -->
+
+            <!-- 加入城市联盟 begin -->
+            <div class="col-lg-12 text-center zhuce dis-none">
+                <p class="hint">加入城市联盟</p>
+                <!-- 错误提示 begin -->
+                <p class="input-box login-error text-left dis-none">
+                    <a href="#" class="iconfont">&#xe602;</a>用户名或密码错误，请重新输入
+                </p><!-- 错误提示 begin -->
+
+                <!-- 不验证提示 begin -->
+                <p class="input-box login-error text-left mobile-ok dis-none" style="background: none;border: none;">
+                    <a href="#" class="iconfont">&#xe604;</a>已存在，无需验证，可直接登录
+                </p><!-- 不验证提示 begin -->
+
+                <ul class="col-lg-12 group">
+                    <li class="col-lg-12">
+                        <label class="col-lg-4 label-box">区域简称：</label>
+                        <input type="text" class="col-lg-8 input-box" placeholder="县或区的简称，2-4个字">
+                        <a class="iconfont error-diff" style="display: inline-block;">&#xe603;</a><!-- 错误 差 pic图标 -->
+                        <a class="iconfont error-diff ok-dui">&#xe604;</a><!-- 对的 pic图标 -->
+                    </li><!-- 红色边框和背景 加 class="empty" 设置input value 为效果图文字 -->
+                    <li class="col-lg-12">
+                        <label class="col-lg-4 label-box">联系人：</label>
+                        <input type="text" class="col-lg-8 input-box" placeholder="请输入联系人">
+                        <a class="iconfont error-diff dis-none">&#xe603;</a>
+                        <a class="iconfont error-diff ok-dui">&#xe604;</a>
+                    </li><!-- 红色边框 加 class="bor-error" -->
+                    <li class="col-lg-12">
+                        <label class="col-lg-4 label-box">联系电话：</label>
+                        <input type="text" class="col-lg-8 input-box" placeholder="请输入联系电话">
+                        <a class="iconfont error-diff">&#xe603;</a>
+                        <a class="iconfont error-diff ok-dui">&#xe604;</a>
+                    </li>
+                    <li class="col-lg-12">
+                        <label class="col-lg-4 label-box">验证码：</label>
+                        <input type="text" class="col-lg-8 col-xs-8 input-box security-inp" placeholder="验证码">
+                        <input type="button" value="获取验证码" class="col-lg-8 col-xs-4 input-box security-code" placeholder="">
+                        <a class="iconfont error-diff">&#xe603;</a>
+                        <a class="iconfont error-diff ok-dui">&#xe604;</a>
+                    </li>
+                    <li class="col-lg-12">
+                        <label class="col-lg-4 label-box">运营城市：</label>
+                        <input type="text" class="col-lg-8 input-box" placeholder="您所在的地级市名称">
+                        <a class="iconfont error-diff">&#xe603;</a>
+                        <a class="iconfont error-diff ok-dui" style="display: inline-block;">&#xe604;</a>
+                    </li>
+                    <li class="col-lg-12">
+                        <button class="col-lg-8 btn input-box btn-theme margin-l">注册</button>
+                    </li><!-- disabled  btn-disabled -->
+                    <li class="col-lg-12 regis">
+                        <p class="input-box">已是联盟？<a>马上登录</a></p>
+                    </li>
+                </ul>
+            </div><!-- 加入城市联盟 end -->
+
+            <!-- 忘记密码 begin -->
+            <div class="col-lg-12 text-center dis-none">
+                <p class="hint">加入城市联盟</p>
+                <!-- 错误提示 begin -->
+                <p class="input-box login-error text-left dis-none">
+                    <a href="#" class="iconfont">&#xe602;</a>用户名或密码错误，请重新输入
+                </p><!-- 错误提示 begin -->
+
+                <ul class="col-lg-12 group">
+                    <li class="col-lg-12">
+                        <label class="col-lg-4 label-box">手机号码：</label>
+                        <input type="text" class="col-lg-8 input-box" placeholder="请输入手机号码">
+                        <a class="iconfont error-diff">&#xe603;</a>
+                        <a class="iconfont error-diff ok-dui">&#xe604;</a>
+                    </li>
+                    <li class="col-lg-12">
+                        <label class="col-lg-4 label-box">短信校验码：</label>
+                        <input type="text" class="col-lg-8 col-xs-8 input-box security-inp" placeholder="校验码">
+                        <input type="button" value="获取" class="col-lg-8 col-xs-4 input-box security-code" placeholder="">
+                        <a class="iconfont error-diff">&#xe603;</a>
+                        <a class="iconfont error-diff ok-dui">&#xe604;</a>
+                    </li>
+                    <li class="col-lg-12">
+                        <label class="col-lg-4 label-box">设置新密码：</label>
+                        <input type="text" class="col-lg-8 input-box" placeholder="请输入4位以上新密码">
+                        <a class="iconfont error-diff">&#xe603;</a>
+                        <a class="iconfont error-diff ok-dui" style="display: inline-block;">&#xe604;</a>
+                    </li>
+                    <li class="col-lg-12">
+                        <button class="col-lg-8 btn input-box btn-theme margin-l">确认</button>
+                    </li><!-- disabled  btn-disabled -->
+                </ul>
+            </div><!-- 忘记密码 end -->
+
+            <!-- 不是联盟成员 begin -->
+            <div class="col-lg-12 not-member text-center dis-none">
+                <i class="iconfont sad">&#xe601;</i>
+                <p class="sorry">对不起，您还不是联盟成员</p>
+                <a class="join">立即加入</a>
+            </div><!-- 不是联盟成员 end -->
+
+            <!-- 登录 begin -->
+            <div class="col-lg-12 not-member text-center dis-none">
+                <img src="images/jzz.png" class="load">
+                <p class="sorry">正在为您跳转到城市联盟后台...</p>
+            </div><!-- 不是联盟成员 begin -->
+
+            <!-- 注册成功 begin -->
+            <div class="col-lg-12 not-member text-center dis-none">
+                <i class="iconfont sad">&#xe621;</i>
+                <p class="sorry">恭喜你！注册成功<span class="lianxi">我们将在1-3个工作日内容联系您</span></p>
+            </div><!-- 注册成功 end -->
+
+        </div>
+
+    </div><!-- container-fluid begin -->
+
+</body>
+</html>

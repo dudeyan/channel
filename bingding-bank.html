@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <!-- 绑定银行卡 begin -->
+            <div class="share-content row">
+                <div class="share-head col-lg-12">前端设置-提现-绑定银行卡</div>
+
+                <div class="col-lg-12 text-center">
+                    <ul class="col-lg-12 share-set" style="margin-top: 100px;">
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs">银行名称：</label>
+                            <input type="text" class="col-lg-8 input-box" placeholder="请在此输入银行名称">
+                            <a class="iconfont error-diff ers pull-left">&#xe603;</a><!-- 错误 差 pic图标 -->
+                        </li><!-- 红色边框和背景 加 class="empty" 设置input value 为效果图文字 -->
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs">银行账号：</label>
+                            <input type="text" class="col-lg-8 input-box" placeholder="请在此输入银行账号">
+                            <a class="iconfont error-diff ers pull-left">&#xe603;</a><!-- 错误 差 pic图标 -->
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs">开户名：</label>
+                            <input type="text" class="col-lg-8 input-box" placeholder="请在此输入开户名">
+                            <a class="iconfont error-diff ers pull-left">&#xe603;</a><!-- 错误 差 pic图标 -->
+                        </li>
+                        <li class="col-lg-12">
+                            <a class="col-lg-4"></a>
+                            <a href="withdraw.html"><button class="col-lg-8 btn input-box btn-theme">确认绑定</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- 绑定银行卡 end -->
+
+            <!-- 绑定成功弹出层 begin -->
+            <div class="prom dis-none">
+                <div class="piece-head text-center">绑定<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="loca-success text-center bingding"><i class="iconfont">&#xe61a;</i>恭喜你，绑定成功</p>
+                <p class="text-center to-withdraw"><a href="withdraw.html">马上去提现</a></p>
+            </div><!-- 绑定成功弹出层 begin -->
+
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</body>
+</html>

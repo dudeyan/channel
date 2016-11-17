@@ -1,0 +1,31 @@
+<!-- <p ng-show="page.total == 0">暂无数据</p> -->
+<ul ng-show="page.total > 0" class="list-inline pagination pull-right">
+    <li ng-click="selectPage(1, 'first')" ng-show="page.currentPage > 1" class="pull-left">
+        <a aria-label="Previous" class="paging-sh">首页</a>
+    </li>
+    <li ng-click="prevPage(page.currentPage)" ng-show="page.currentPage > 1">
+        <a aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    <li ng-click="" class="pull-left">
+        <input type="text" ng-change="selectPage(page.currentPage)" ng-model="page.currentPage" class="paging" style="width: 40px;height: 33px;line-height: 18px;margin-top: 1px;text-align: center;" />
+    </li>
+
+    <li ng-click="nextPage(page.currentPage)" ng-show="page.currentPage < page.pages">
+        <a aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+
+    <li ng-click="selectPage(page.pages, 'last')" ng-show="page.currentPage < page.pages" class="pull-left">
+        <a aria-label="Previous" class="paging-sh">尾页</a>
+    </li>
+    <li class="pull-left add-merchan" style="padding: 0;">
+        <select name="" id="" class="paging down-jt" style=" width: 55px;height: 33px;padding: 0 4px;line-height: 18px;margin-top: 1px;text-align: center;background-position: 36px;background-size: 12px;">
+            <option value="">10</option>
+            <option value="">20</option>
+            <option value="">30</option>
+            <option value="">50</option>
+            <option value="">80</option>
+            <option value="">100</option>
+        </select>
+    </li>
+    <li class="paging-all" style="line-height: 35px;">共{{page.pages}}页 / {{page.total}}条数据</li>
+</ul>

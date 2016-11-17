@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+            <div class="col-lg-12 manage-content">
+                <p class="col-lg-12 store-server">区域/类别管理-区域管理</p>
+                <div class="back-white col-lg-12">
+
+                    <button class="btn area-btn">添加一级区域</button>
+
+                    <table class="col-lg-12 text-center buy-table">
+                        <thead>
+                        <tr>
+                            <th>一级区域</th>
+                            <th>操作</th>
+                            <th>二级区域</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>盐田区</td>
+                            <td class="operating"><a>修改</a>|<a>删除</a></td>
+                            <td class="operating"><a href="area-two.html">查看</a></td>
+                        </tr>
+                        <tr class="back-gray">
+                            <td>盐田区</td>
+                            <td class="operating"><a>修改</a>|<a>删除</a></td>
+                            <td class="operating"><a href="area-two.html">查看</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 添加区域 begin -->
+            <div class="prom del-prom dis-none">
+                <div class="piece-head text-center">添加一级区域<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="cert-word text-center">
+                    <input type="text" class="loca area-input" placeholder="请输入区域名称"/>
+                </p>
+                <p class="text-center"><button class="btn btn-theme del-btn">确认添加</button></p>
+            </div>
+            <!-- 添加区域 end -->
+
+            <!-- 修改区域 begin -->
+            <div class="prom del-prom dis-none">
+                <div class="piece-head text-center">修改一级区域<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="cert-word text-center">
+                    <input type="text" class="loca area-input" value="盐田区" placeholder="请输入区域名称"/>
+                </p>
+                <p class="text-center"><button class="btn btn-theme del-btn">确认修改</button></p>
+            </div>
+            <!-- 修改区域 end -->
+
+            <!-- 删除提示层 begin -->
+            <div class="prom del-prom ">
+                <div class="piece-head text-center">删除<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="cert-word text-center">确定删除此一级区域？</p>
+                <p class="text-center"><button class="btn btn-theme del-btn">确认</button></p>
+            </div>
+            <!-- 删除提示层 end -->
+
+        </div>
+        <!-- right-content end -->
+
+    </div>
+    <!-- 内容 end -->
+
+</div>
+<!-- container-fluid end -->
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</body>
+</html>

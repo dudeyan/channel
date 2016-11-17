@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <!-- index-content begin -->
+            <div class="col-lg-12 index-content">
+                <!-- 切换按钮 begin -->
+                <div class="ad-switching row">
+                    <button class="plan-btn act">广告投放计划</button>
+                    <button class="plan-btn ">广告素材</button>
+                </div><!-- 切换按钮 end -->
+
+                <!-- 广告投放计划 begin -->
+                <div class="ad-content row">
+                    <!-- 广告投放列表 begin -->
+                    <div class="shop-list row">
+                        <div class="add-ad row">
+                            <button class="add-ad-label add-ad-btn pull-left"><i class="iconfont">&#xe623;</i></button>
+                            <button class="add-ad-btn pull-left">添加</button>
+                        </div>
+
+                        <table class="col-lg-12 text-center manage-table ad-manager-table">
+                            <thead>
+                            <tr>
+                                <th>广告投放计划</th>
+                                <th>广告位</th>
+                                <th>广告物料</th>
+                                <th>状态</th>
+                                <th>时间</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td width="200">国庆大狂欢</td>
+                                <td>1</td>
+                                <td>xxx</td>
+                                <td>启用</td>
+                                <td class="spike-time" width="210">
+                                    <p class="product">开始：2015-09-12 12:00</p>
+                                    <p class="product">开始：2015-10-12 12:00</p>
+                                </td>
+                                <td width="210">
+                                    <p class="code">
+                                        <button>修改</button>|<button>删除</button>|<button>停用</button>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="200">国庆大狂欢</td>
+                                <td>1</td>
+                                <td>xxx</td>
+                                <td>启用</td>
+                                <td class="spike-time" width="210">
+                                    <p class="product">开始：2015-09-12 12:00</p>
+                                    <p class="product">开始：2015-10-12 12:00</p>
+                                </td>
+                                <td width="210">
+                                    <p class="code">
+                                        <button>修改</button>|<button>删除</button>|<button>停用</button>
+                                    </p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- 广告投放列表 end -->
+
+                    <!-- 广告投放计划发布 begin -->
+                    <div class="add-ad-jihua dis-none">
+                        <div class="share-head col-lg-12">广告投放计划-发布</div>
+                        <div class="piece-head col-lg-12">投放信息</div>
+
+                        <div class="col-lg-12">
+                            <ul class="col-lg-12 share-set add-ads">
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs">投放广告位置：</label>
+                                    <select class="col-lg-8 input-box down-jt">
+                                        <option>请选择广告位置</option>
+                                    </select>
+                                </li>
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs">投放广告素材：</label>
+                                    <p class="col-lg-8 input-box down-jt sucai">请选择广告素材</p>
+                                    <ul class="col-lg-8 input-box sucai_ul">
+                                        <li class="col-lg-12"><input type="checkbox" class="check-box" placeholder=""><p class="f-toe">素材1</p></li>
+                                        <li class="col-lg-12"><input type="checkbox" class="check-box" placeholder=""><p class="f-toe">素材1</p></li>
+                                        <li class="col-lg-12"><input type="checkbox" class="check-box" placeholder=""><p class="f-toe">素材1</p></li>
+                                        <li class="col-lg-12"><input type="checkbox" class="check-box" placeholder=""><p class="f-toe">素材1</p></li>
+                                        <li class="col-lg-12"><input type="checkbox" class="check-box" placeholder=""><p class="f-toe">素材1</p></li>
+                                    </ul>
+                                    <!--<select class="col-lg-8 input-box down-jt">
+                                        <option>请选择广告素材</option>
+                                    </select>-->
+                                    <button class="pull-left btn input-box add-sucai">添加广告素材</button>
+                                </li>
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs">投放广告时间：</label>
+                                    <input type="text" class="col-lg-8 input-box down-jt" placeholder="2015-09-08 12:00">
+                                    <hr class="pull-left hengxian">
+                                    <input type="text" class="col-lg-8 input-box down-jt" placeholder="2015-11-08 12:00">
+                                </li>
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs">优先级：</label>
+                                    <select class="col-lg-8 input-box down-jt" style="width: 60px; background-position: 88%;">
+                                        <option>1</option>
+                                    </select>
+                                    <span class="pull-left zhanshi">（时间冲突时，越大越优先展示）</span>
+                                </li>
+                                <li><div class="piece-head col-lg-12">备注</div></li>
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs">投放计划名称：</label>
+                                    <input type="text" class="col-lg-8 input-box ad-exp" placeholder="">
+                                    <span class="pull-left zhanshi">（如：国庆大促销）</span>
+                                </li>
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs">说明：</label>
+                                    <textarea placeholder="" class="col-lg-8 input-box ad-exp ad-explana"></textarea>
+                                </li>
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs"></label><button class="col-lg-8 btn input-box btn-theme ad-exp">确认</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- 广告投放计划发布 end -->
+                </div>
+                <!-- 广告投放计划 end -->
+
+                <!-- 广告素材 begin -->
+                <div class="ad-content row dis-none">
+                    <!-- 广告素材列表 begin -->
+                    <div class="shop-list row">
+                        <div class="add-ad row">
+                            <button class="add-ad-label add-ad-btn pull-left"><i class="iconfont">&#xe623;</i></button>
+                            <button class="add-ad-btn pull-left">添加</button>
+                        </div>
+
+                        <table class="col-lg-12 text-center manage-table ad-manager-table">
+                            <thead>
+                            <tr>
+                                <th>图片</th><th>广告素材名称</th><th>类型</th><th>状态</th><th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td width="200"><img src="images/bj.png" class="ad-pic" ></td>
+                                <td>xxxxxxxxxxxx</td>
+                                <td>文字</td>
+                                <td>启用</td>
+                                <td width="210">
+                                    <p class="code">
+                                        <button>修改</button>|<button>删除</button>|<button>停用</button>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="200"><img src="images/bj.png" class="ad-pic" ></td>
+                                <td>xxxxxxxxxxxx</td>
+                                <td>图片</td>
+                                <td>停用</td>
+                                <td width="210">
+                                    <p class="code">
+                                        <button>修改</button>|<button>删除</button>|<button>停用</button>
+                                    </p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- 广告素材列表 end -->
+
+                    <!-- 广告素材发布 begin -->
+                    <div class="add-ad-jihua dis-none">
+                        <div class="share-head col-lg-12">广告素材-发布</div>
+
+                        <div class="col-lg-12">
+                            <ul class="col-lg-12 share-set add-ads">
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs">广告名称：</label>
+                                    <input type="text" class="col-lg-8 input-box ad-exp" placeholder="">
+                                </li>
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs">类型：</label>
+                                    <input type="checkbox" placeholder="" class="pull-left check" style="opacity: 0;">
+                                    <div class="pull-left radio-span text-center radio-act"><p class="act dis-none"></p></div>
+                                    <span class="tupian">图片</span>
+                                </li>
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs">选择图片：</label>
+                                    <input type="file" class="pull-left btn input-box file-pic">
+                                    <button class="pull-left btn input-box add-sucai" style="margin-left: -120px;">选择图片</button>
+                                    <span class="chicun">480*100px</span>
+                                </li>
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs">描述：</label>
+                                    <textarea placeholder="" class="col-lg-8 input-box ad-exp ad-explana"></textarea>
+                                </li>
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs">图片跳转到：</label>
+                                    <input type="text" class="col-lg-8 input-box ad-exp" value="www." placeholder="">
+                                </li>
+                                <li class="col-lg-12">
+                                    <label class="col-lg-4 label-boxs"></label><button class="col-lg-8 btn input-box btn-theme ad-exp">确认</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- 广告素材发布 end -->
+                </div>
+                <!-- 广告素材 end -->
+
+                <!-- 广告投放计划发布成功 begin -->
+                <div class="prom dis-none">
+                    <div class="piece-head text-center"><button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                    <p class="loca-success text-center"><i class="iconfont">&#xe61a;</i>发布成功</p>
+                </div><!-- 广告投放计划发布成功 end -->
+
+                <!-- 广告投放计划发布失败 begin -->
+                <div class="prom dis-none">
+                    <div class="piece-head text-center"><button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                    <p class="loca-success loca-errow text-center"><i class="iconfont">&#xe61b;</i>发布失败</p>
+                </div><!-- 广告投放计划发布失败 end -->
+
+            </div><!-- index-content end -->
+        </div><!-- right-content end -->
+    </div><!-- 内容 end -->
+</div><!-- container-fluid end -->
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <title>渠道管理中心</title>
+
+  <!-- css begin-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+  <!-- header begin -->
+  <header class="row">
+    <div class="header">
+      <p class="pull-left city-logo"></p>
+      <p class="pull-left name">城市联盟管理后台</p>
+      <div class="pull-right head-right">
+        <!--<a class="dis-none">
+            <p class="pull-left city-pic">
+                <i class="iconfont">&#xe605;</i><span>消息（2）</span>
+            </p>
+        </a>-->
+        <p class="pull-left city-pic">
+          <i class="iconfont chengshi">&#xe600;</i><span>深圳</span>
+        </p>
+        <a class="pull-left">
+          <p  class="pull-left city-pic">
+            <i class="iconfont">&#xe62e;</i><span>社交营销系统</span>
+          </p>
+        </a>
+        <a class="pull-left">
+          <p class="pull-left city-pic">
+            <i class="iconfont">&#xe630;</i><span>修改密码</span>
+          </p>
+        </a>
+        <a class="pull-left" href="login.html">
+          <p class="pull-left city-pic">
+            <i class="iconfont">&#xe606;</i><span>退出</span>
+          </p>
+        </a>
+      </div>
+    </div>
+  </header><!-- header end -->
+
+  <!-- 内容 begin -->
+  <div class="content row">
+
+    <!-- left-menu begin -->
+    <div class="pull-left left-menu">
+      <ul class="col-lg-12">
+
+        <!-- 管理首页 -->
+        <li class="col-lg-12">
+          <a href="index.html"><span class="pic"><i class="iconfont">&#xe607;</i></span><span>管理首页</span></a>
+        </li>
+
+        <!-- 店铺管理 -->
+        <li class="col-lg-12">
+          <a href="shop-manage.html"><span class="pic"><i class="iconfont">&#xe609;</i></span><span>店铺管理</span></a>
+        </li>
+
+        <!-- 查看发布 -->
+        <li class="col-lg-12">
+          <a class="right-arrow down"><span class="pic"><i class="iconfont">&#xe60c;</i></span><span>查看发布</span></a>
+        </li>
+        <li class="dis-none">
+          <ul class="col-lg-12 menu">
+            <li class="col-lg-12">
+              <a href="product.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>商品优惠</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="spike.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>秒杀</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="daijin-coupons.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>代金/折扣券</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="draw-list.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>抽奖</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="puzzle-list.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>拼图</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="buy-list.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>一元购</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="lucky-list.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>幸运连连抽</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="misson.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>拼团</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- 运营数据 -->
+        <li class="col-lg-12">
+          <a class="right-arrow down"><span class="pic"><i class="iconfont">&#xe62f;</i></span><span>区域/类别管理</span></a>
+        </li>
+        <li class="dis-none">
+          <ul class="col-lg-12 menu">
+            <li class="col-lg-12">
+              <a href="area-manage.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>区域管理</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="category.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>类别管理</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- 运营数据 -->
+        <li class="col-lg-12">
+          <a class="right-arrow down"><span class="pic"><i class="iconfont">&#xe624;</i></span><span>运营数据</span></a>
+        </li>
+        <li class="dis-none">
+          <ul class="col-lg-12 menu">
+            <li class="col-lg-12">
+              <a href="receive.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>购买/消费</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="withdraw-list.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>商户提现明细</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="comments.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>评论管理</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="complaints.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>投诉管理</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="sign-in.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>签到管理</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="member-manage.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>会员管理</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- 活动参与记录 -->
+        <li class="col-lg-12">
+          <a class="right-arrow down"><span class="pic"><i class="iconfont buy-icon">&#xe626;</i></span><span>活动参与记录</span></a>
+        </li>
+        <li class="dis-none">
+          <ul class="col-lg-12 menu">
+            <li class="col-lg-12">
+              <a href="buy-record.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>一元购</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="puzzle-record.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>拼图</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="money-record.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>红包</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- 吸粉红包 -->
+        <li class="col-lg-12">
+          <a class="right-arrow down"><span class="pic"><i class="iconfont buy-icon">&#xe62b;</i></span><span>吸粉红包</span></a>
+        </li>
+        <li class="dis-none">
+          <ul class="col-lg-12 menu">
+            <li class="col-lg-12">
+              <a href="add-red.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>发布红包</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="red-record.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>查看红包</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- VIP -->
+        <li class="col-lg-12">
+          <a class="right-arrow down"><span class="pic"><i class="iconfont buy-icon">&#xe62d;</i></span><span>VIP</span></a>
+        </li>
+        <li class="dis-none">
+          <ul class="col-lg-12 menu">
+            <li class="col-lg-12">
+              <a href="vip-setting.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>VIP设置</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="vip-data.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>VIP数据</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- 城市114 -->
+        <li class="col-lg-12">
+          <a class="right-arrow down"><span class="pic"><i class="iconfont buy-icon">&#xe634;</i></span><span>城市114</span></a>
+        </li>
+        <li class="">
+          <ul class="col-lg-12 menu">
+            <li class="col-lg-12 active">
+              <a href="city-manage.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>发布管理</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="city-setting.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>114设置</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- 五折特惠卡 -->
+        <li class="col-lg-12">
+          <a class="right-arrow down"><span class="pic"><i class="iconfont buy-icon">&#xe631;</i></span><span>五折特惠卡</span></a>
+        </li>
+        <li class="dis-none">
+          <ul class="col-lg-12 menu">
+            <li class="col-lg-12">
+              <a href="half-setting.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>设置</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="half-data.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>数据</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- 广告管理 -->
+        <li class="col-lg-12">
+          <a class="right-arrow down"><span class="pic"><i class="iconfont">&#xe622;</i></span><span>广告管理</span></a>
+        </li>
+        <li class="dis-none">
+          <ul class="col-lg-12 menu">
+            <li class="col-lg-12">
+              <a href="ad-manager.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>横条广告</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="marketing.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>营销工具展示</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="customize.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>底部自定义菜单</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- 成员管理 -->
+        <li class="col-lg-12">
+          <a href="member.html"><span class="pic"><i class="iconfont">&#xe60a;</i></span><span>成员管理</span></a>
+        </li>
+
+        <!-- 联盟管理 -->
+        <li class="col-lg-12">
+          <a class="right-arrow down"><span class="pic"><i class="iconfont">&#xe608;</i></span><span>联盟管理</span></a>
+        </li>
+        <li class="dis-none">
+          <ul class="col-lg-12 menu">
+            <li class="col-lg-12">
+              <a href="share.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>分享设置</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="alliance.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>联盟信息</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="my-account.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>我的账户</span>
+              </a>
+            </li>
+            <li class="col-lg-12">
+              <a href="site.html">
+                <span class="pic"><i class="iconfont">&#xe60d;</i></span><span>站点信息</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- 相关链接 -->
+        <li class="col-lg-12">
+          <a href="link.html"><span class="pic"><i class="iconfont">&#xe625;</i></span><span>相关链接</span></a>
+        </li>
+
+        <!-- 产品分销 -->
+        <li class="col-lg-12">
+          <a href="distri.html"><span class="pic"><i class="iconfont">&#xe62e;</i></span><span>产品分销</span></a>
+        </li>
+
+      </ul>
+    </div><!-- left-menu end -->
+
+    <!-- right-content begin -->
+    <div class="pull-left right-content">
+
+      <div class="col-lg-12 manage-content">
+        <p class="col-lg-12 store-server">城市114-发布管理-添加其他114</p>
+
+        <div class="col-lg-12 add-merchan">
+          <ul class="col-lg-12">
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name red">信息内容</label>
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name"><span class="red">*</span>名称：</label>
+              <input type="tel" placeholder="请输入名称" class="pull-left inputs">
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name"><span class="red">*</span>地址：</label>
+              <input type="tel" placeholder="请输入地址" class="pull-left inputs">
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name boss-name">图片：<br><span></span></label>
+              <div class="pull-left relese">
+                <img src="images/6.jpg" alt="" class="boss-pic"/>
+                <button class="del"><i class="iconfont">&#xe61f;</i></button>
+                <p class="refund-way line-twenty">尺寸：200*200px</p>
+              </div>
+              <button class="pull-left up-pics boss-up"><i class="iconfont">&#xe628;</i></button>
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name"><span class="red">*</span>电话号码：</label>
+              <input type="number" placeholder="必填，固话请加区号" class="pull-left inputs inputs-money">
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name">选择大分类：</label>
+              <select class="pull-left inputs inputs-money down-jt">
+                <option class="pull-left" value="">美食</option>
+              </select>
+              <span class="pull-left hori">—</span>
+              <select class="pull-left inputs inputs-money down-jt">
+                <option class="pull-left" value="">火锅</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 add-merchan">
+          <button class="btns inputs">确定</button>
+        </div>
+      </div>
+    </div><!-- right-content end -->
+
+    <!-- 成功提示层 begin -->
+    <div class="prom succ-prom text-center dis-none">添加成功！</div>
+    <!-- 成功提示层 end -->
+
+  </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+  $("#left").load("left.html");
+  $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</body>
+</html>

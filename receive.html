@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <!-- manage-content begin -->
+            <div class="manage-content row">
+                <!-- 筛选 begin -->
+                <div class="filter">
+                    <div class="btn-content receive-btn row" style="font-size: 16px;">
+                        <span class="pull-left" style="line-height: 30px;">运营数据-领取/使用</span>
+                        <button class="pull-left mar-one act">全部</button>
+                        <button class="pull-left">商品优惠</button>
+                        <button class="pull-left">秒杀</button>
+                        <button class="pull-left">券</button>
+                        <button class="pull-left">抽奖</button>
+                        <button class="pull-left">拼图</button>
+                        <button class="pull-left">一元购</button>
+                    </div>
+                </div><!-- 筛选 end -->
+
+                <!-- 商品优惠领取使用列表 begin -->
+                <div class="shop-list back-white row">
+
+                    <div class="col-lg-12 sequence">
+                        <div class="col-lg-12">
+                            排序：<a class="act">订单生成时间</a>/<a>消费时间</a>
+                        </div>
+
+                        <div class="col-lg-12 m-t-ten input-h-32">
+                            <div class="pull-left">
+                                <label class="pull-left label-name" style="width: 75px;">订单状态：</label>
+                                <input name="" type="hidden" value="" id="inputselect"/>
+                                <div class="pull-left add-merchan type-sel" id="divselect">
+                                    <p class="inputs inputs-money down-jt w-100" style="margin: 0;">全部</p>
+                                    <ul class="text-center" style="width: 100px;">
+                                        <li><a href="javascript:;" selectid="1">已消费</a></li>
+                                        <li><a href="javascript:;" selectid="2">已支付</a></li>
+                                        <li><a href="javascript:;" selectid="3">已退款</a></li>
+                                        <li><a href="javascript:;" selectid="4">未消费</a></li>
+                                        <li><a href="javascript:;" selectid="5">取消订单</a></li>
+                                        <li><a href="javascript:;" selectid="6">已过期</a></li>
+                                        <li><a href="javascript:;" selectid="7">全部</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="pull-left add-merchan input-h-32">
+                                <li class="pull-left" style="margin-top: 0;">
+                                    <label class="pull-left text-right label-name w-100">下单时间：</label>
+                                    <input class="pull-left inputs inputs-money down-jt" placeholder=""/>
+                                    <span class="pull-left hori">—</span>
+                                    <input class="pull-left inputs inputs-money down-jt" placeholder=""/>
+                                </li>
+                            </ul>
+                            <div class="pull-right add-merchan input-h-32">
+                                <input name="" type="hidden" value="" id="inputselect1"/>
+                                <div class="pull-left add-merchan type-sel" id="divselect1">
+                                    <p class="inputs inputs-money down-jt w-100" style="margin: 0;border-radius: 5px 0 0 5px;">商品名称</p>
+                                    <ul class="text-center" style="width: 100px;">
+                                        <li><a href="javascript:;" selectid="1">店铺名称</a></li>
+                                        <li><a href="javascript:;" selectid="2">订单名称</a></li>
+                                    </ul>
+                                </div>
+                                <input type="text" placeholder="请输入" style="margin:0 0 0 -1px; border-radius:0 5px 5px 0;" class="pull-left inputs inputs-money">
+                                <button class="pull-left btn search m-l-ten">搜索</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <table class="col-lg-12 text-center buy-table">
+                        <thead>
+                        <tr>
+                            <th width="70">用户ID</th>
+                            <th width="110">用户</th>
+                            <th width="100">时间</th>
+                            <th width="60">类型</th>
+                            <th width="95">店铺</th>
+                            <th width="125">名称</th>
+                            <th width="100">金额/数量</th>
+                            <th width="80">支付方式</th>
+                            <th width="100">订单号</th>
+                            <th width="70">支付单号</th>
+                            <th width="85">状态</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>13596</td>
+                            <td>小鱼儿<br>1353456968</td>
+                            <td >2015-08-24 05:00</td>
+                            <td>秒杀</td>
+                            <td>鬼情123456</td>
+                            <td>1元秒杀苹果6s</td>
+                            <td>￥1.00x1</td>
+                            <td>微信支付</td>
+                            <td>446511155</td>
+                            <td class="relative">
+                                <span>......6</span>
+                                <!-- 支付单号 begin -->
+                                <div class="tag pull-left snapshot-prom pay-num dis-none">
+                                    <div class="int-title">
+                                        <p>支付单号：<span>9566556562665</span></p>
+                                        <p class="refund-way">温馨提示：点一下复制支付单号</p>
+                                    </div>
+                                    <div class="arrow arrows"><em></em><span></span></div>
+                                </div>
+                                <!-- 支付单号 end -->
+                            </td>
+                            <td>已消费</td>
+                        </tr>
+                        <tr class="back-gray">
+                            <td>13596</td>
+                            <td>小鱼儿<br>1353456968</td>
+                            <td >2015-08-24 05:00</td>
+                            <td>秒杀</td>
+                            <td>鬼情123456</td>
+                            <td>1元秒杀苹果6s</td>
+                            <td>￥1.00x1</td>
+                            <td>微信支付</td>
+                            <td>446511155</td>
+                            <td class="relative">
+                                <span>......46</span>
+                                <!-- 支付单号 begin -->
+                                <div class="tag pull-left snapshot-prom pay-num dis-none">
+                                    <div class="int-title">
+                                        <p>支付单号：<span>9566556562646</span></p>
+                                        <p class="refund-way">温馨提示：点一下复制支付单号</p>
+                                    </div>
+                                    <div class="arrow arrows"><em></em><span></span></div>
+                                </div>
+                                <!-- 支付单号 end -->
+                            </td>
+                            <td>已退款<span class="refund-way">退款方式：原路径返回</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div><!-- 商品优惠领取使用列表 end -->
+
+                <!-- 券领取使用列表 begin -->
+                <div class="shop-list row dis-none">
+                    <table class="col-lg-12 text-center manage-table receive-table">
+                        <thead>
+                        <tr>
+                            <th>店铺</th>
+                            <th style="text-align: left;">用户</th>
+                            <th style="text-align: left;">时间</th>
+                            <th>类型</th>
+                            <th>名称</th>
+                            <th>金额/数量</th>
+                            <th>支付方式</th>
+                            <th>状态</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>张记没问释放菜馆</td>
+                            <td class="text-left" width="160">小王是啥子<p>TEL：1314159</p></td>
+                            <td class="text-left" width="100">2015-08-24 05:00</td>
+                            <td width="60">80</td>
+                            <td>鬼情123456</td>
+                            <td>￥12.00x2</td>
+                            <td>到店支付</td>
+                            <td>已消费</td>
+                        </tr>
+                        <tr>
+                            <td>张记没问释放菜馆</td>
+                            <td class="text-left" width="160">小王是啥子<p>TEL：1314159</p></td>
+                            <td class="text-left" width="100">2015-08-24 05:00</td>
+                            <td width="60">80</td>
+                            <td>鬼情123456</td>
+                            <td>￥12.00x2</td>
+                            <td>微信买单</td>
+                            <td>未消费</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div><!-- 券领取使用列表 end -->
+
+                <div class="row pull-right paging">
+                    <button class="pull-left shouye">首页</button>
+                    <button class="pull-left before"><i class="iconfont befores">&#xe61d;</i></button>
+                    <input type="text" value="1" class="pull-left paging-input text-center" placeholder="">
+                    <button class="pull-left before after"><i class="iconfont">&#xe61d;</i></button>
+                    <button class="pull-left shouye">尾页</button>
+                    <span class="pull-left">共9页/45条数据</span>
+                </div>
+
+            </div>
+            <!-- manage-content end -->
+
+        </div>
+        <!-- right-content end -->
+
+    </div>
+    <!-- 内容 end -->
+
+</div>
+<!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script" src="js/select.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+    $.divselect("#divselect","#inputselect");
+</script>
+<!-- js end -->
+
+</html>

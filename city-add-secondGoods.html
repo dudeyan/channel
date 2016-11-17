@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <title>渠道管理中心</title>
+
+  <!-- css begin-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+  <!-- header begin header.html -->
+  <header class="row" id="header"></header>
+  <!-- header end -->
+
+  <!-- 内容 begin -->
+  <div class="content row">
+
+    <!-- left-menu begin left.html -->
+    <div class="pull-left left-menu" id="left"></div>
+    <!-- left-menu end -->
+
+    <!-- right-content begin -->
+    <div class="pull-left right-content">
+
+      <div class="manage-content row">
+        <p class="col-lg-12 store-server">
+          城市114-114管理-发布信息
+        </p>
+      </div>
+
+      <!-- 发布信息 begin -->
+      <div class="share-content m-h-fifty row">
+        <div class="col-lg-12 filter bor-b">
+          <a href="city-add-secondGoods.html" class="pull-left m-r-ten m-b-ten"><button class="pull-left btns active">二手物品</button></a>
+          <a href="city-add-rentHouse.html" class="pull-left m-r-ten"><button class="pull-left btns">租房</button></a>
+          <a href="city-add-secondHouse.html" class="pull-left m-r-ten"><button class="pull-left btns">二手房</button></a>
+          <a href="city-add-job.html" class="pull-left m-r-ten"><button class="pull-left btns">招聘</button></a>
+          <a href="city-add-job.html" class="pull-left m-r-ten"><button class="pull-left btns">兼职</button></a>
+        </div>
+        <div class="col-lg-12 add-merchan share-input">
+          <ul class="col-lg-12 col-md-12">
+            <li class="col-lg-12 col-md-12">
+              <label class="pull-left text-right label-name">商品名称：</label>
+              <input type="text" placeholder="请填写商品名称" class="pull-left inputs">
+            </li>
+            <li class="col-lg-12 col-md-12">
+              <label class="pull-left text-right label-name">商品简介：</label>
+              <input type="text" placeholder="请填写商品简介" class="pull-left inputs">
+            </li>
+            <li class="col-lg-12 col-md-12">
+              <label class="pull-left text-right label-name">优惠价：</label>
+              <span class="text-center symbol">￥</span>
+              <input type="number" placeholder="请填写优惠价" class="inputs inputs-money" style="padding-left: 36px;">&nbsp;元
+            </li>
+            <li class="col-lg-12 col-md-12">
+              <label class="pull-left text-right label-name">原价：</label>
+              <span class="text-center symbol">￥</span>
+              <input type="number" placeholder="请填写原价" class="inputs inputs-money" style="padding-left: 36px;">&nbsp;元
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name">选择分类：</label>
+              <select class="pull-left inputs inputs-money down-jt">
+                <option class="pull-left" value="">请选择</option>
+              </select>
+              <span class="pull-left hori">—</span>
+              <select class="pull-left inputs inputs-money down-jt">
+                <option class="pull-left" value="">请选择</option>
+              </select>
+            </li>
+            <li class="col-lg-12">
+              <label class="pull-left text-right label-name">所在区域：</label>
+              <select class="pull-left inputs inputs-money down-jt">
+                <option class="pull-left" value="">请选择</option>
+              </select>
+              <span class="pull-left hori">—</span>
+              <select class="pull-left inputs inputs-money down-jt">
+                <option class="pull-left" value="">请选择</option>
+              </select>
+            </li>
+            <li class="col-lg-12 col-md-12">
+              <label class="pull-left text-right label-name">联系人：</label>
+              <input type="text" placeholder="请填写联系人" class="pull-left inputs">
+            </li>
+            <li class="col-lg-12 col-md-12">
+              <label class="pull-left text-right label-name">联系电话：</label>
+              <input type="text" placeholder="请填写联系电话" class="pull-left inputs">
+            </li>
+            <li class="col-lg-12">
+              <label class="col-lg-4 text-right label-name" style="margin-top: 30px;">图片展示：</label>
+              <p class="pull-left">
+                <img src="images/6.jpg" class="share-pic pull-left">
+                <button class="del-pic"><i class="iconfont">&#xe61f;</i></button>
+                <button class="pull-left up-pics" style="margin-top: 15px;"><i class="iconfont"></i></button>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 add-merchan share-input">
+          <button class="btns inputs">确定发布</button>
+        </div>
+
+      </div>
+      <!-- 发布信息 end -->
+
+    </div><!-- right-content end -->
+
+  </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+  $("#left").load("left.html");
+  $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</html>

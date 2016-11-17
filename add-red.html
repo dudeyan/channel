@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <div class="col-lg-12 manage-content">
+                <p class="col-lg-12 store-server">吸粉红包-发布红包</p>
+
+                <!-- 暂无此权限 -->
+                <div class="col-lg-12 back-white dis-none">
+                    <h1 class="col-lg-12 purview text-center">暂无此权限<small class="dis-block">您可联系客服开头权限。电话：1669595989</small></h1>
+                </div>
+
+                <div class="col-lg-12 add-merchan add-red">
+                    <ul class="col-lg-12">
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">活动标题：</label>
+                            <input type="text" placeholder="如：新年红包大放送" class="pull-left inputs">
+                            <p class="col-lg-12 error">请填写2-10个字的活动标题</p>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">活动副标题：</label>
+                            <input type="text" placeholder="如：越分享越富有" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">活动时间：</label>
+                            <input type="text" placeholder="开始时间" class="pull-left inputs inputs-money">
+                            <p class="col-lg-12 error">开始时间不能大于当前时间</p>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">活动金额：</label>
+                            <span class="text-center symbol">￥</span>
+                            <input type="password" placeholder="" class="inputs inputs-money">&nbsp;元
+                            <span class="gray">（至少会发放1000个红包）</span>
+                            <p class="col-lg-12 available">可用余额：2000元 <a href="recharge.html">去充值&gt;&gt;</a></p>
+                            <span class="col-lg-12 gray red-prom">红包全部为现金红包，分享给好友后可以得到鼓励红包，鼓励红包为好友红包金额的50%</span>
+                        </li>
+                    </ul>
+                    <div class="col-xs-12 add-merchan">
+                        <button class="btns inputs red-btn">完成发布</button>
+                        <span class="col-lg-12 gray red-prom size-12 text-center" style="padding-left: 0;margin-top: -230px;">发布红包需要绑定微信公众平台开发接口</span>
+                        <span class="col-lg-12 gray red-prom" style="padding-left: 180px;margin-bottom:15px;">
+                            红包指南：<a href="http://xuexi.xshapp.com/" class="red-study">http://xuexi.xshapp.com/</a>
+                        </span>
+                        <span class="col-lg-12 gray red-prom" style="padding-left: 180px;margin-bottom: 150px;">
+                            此活动可能会触发微信3月份新发布的规则，慎用！
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 发布成功弹出层 begin -->
+            <div class="proms red-success-prom dis-none">
+                <div class="piece-head text-center"><button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <!--<button class="del del-red"><i class="iconfont">&#xe61f;</i></button>-->
+                <p class="text-center success-word" style="font-size: 20px;">发布成功！</p>
+                <p class="red-word">如果还未设置公众号，请点击右上角的”设交营销系统“进入系统进行设置</p>
+            </div><!-- 点击删除弹出的层 begin -->
+
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</body>
+</html>

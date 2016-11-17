@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <!-- right-content begin -->
+            <div class="pull-left right-content">
+
+                <!-- manage-content begin -->
+                <div class="manage-content row">
+                    <!-- 筛选 begin -->
+                    <div class="filter">
+                        <div class="btn-content receive-btn row" style="font-size: 16px;">
+                            <span class="pull-left" style="line-height: 30px;">活动参与记录-一元购</span>
+                        </div>
+                    </div><!-- 筛选 end -->
+
+                    <!-- 商品优惠领取使用列表 begin -->
+                    <div class="shop-list row">
+                        <table class="col-lg-12 text-center buy-table">
+                            <thead>
+                            <tr>
+                                <th width="150">店铺</th>
+                                <th width="150">用户</th>
+                                <th width="120">时间</th>
+                                <th>名称</th>
+                                <th width="120">金额/数量</th>
+                                <th width="100">状态</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>张记没问释放菜馆</td>
+                                <td>小王是啥子<p>13530164660</p></td>
+                                <td>2015-08-24 05:00</td>
+                                <td>鬼情123456</td>
+                                <td>￥12.00x2</td>
+                                <td>未开奖</td>
+                            </tr>
+                            <tr class="back-gray">
+                                <td>张记没问释放菜馆</td>
+                                <td>小王是啥子<p>13530164660</p></td>
+                                <td>2015-08-24 05:00</td>
+                                <td>鬼情123456</td>
+                                <td>￥12.00x2</td>
+                                <td class="been">已中奖</td>
+                            </tr>
+                            <tr>
+                                <td>张记没问释放菜馆</td>
+                                <td>小王是啥子<p>13530164660</p></td>
+                                <td>2015-08-24 05:00</td>
+                                <td>鬼情123456</td>
+                                <td>￥12.00x2</td>
+                                <td class="been-no">未中奖</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- 商品优惠领取使用列表 end -->
+
+
+                    <div class="row pull-right paging">
+                        <button class="pull-left shouye">首页</button>
+                        <button class="pull-left before"><i class="iconfont befores">&#xe61d;</i></button>
+                        <input type="text" value="1" class="pull-left paging-input text-center" placeholder="">
+                        <button class="pull-left before after"><i class="iconfont">&#xe61d;</i></button>
+                        <button class="pull-left shouye">尾页</button>
+                        <span class="pull-left">共9页/45条数据</span>
+                    </div>
+
+                </div><!-- manage-content end -->
+
+            </div><!-- right-content end -->
+
+        </div><!-- 内容 end -->
+    </div>
+
+</div><!-- container-fluid end -->
+
+    <!-- js begin -->
+    <script rel="script" src="js/jquery.js"></script>
+    <script rel="script">
+        $("#left").load("left.html");
+        $("#header").load("header.html");
+    </script>
+    <!-- js end -->
+
+</body>
+</html>

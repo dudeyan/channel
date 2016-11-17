@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <div class="col-lg-12 manage-content">
+                <p class="col-lg-12 store-server">广告管理-横条广告-添加广告</p>
+
+                <div class="col-lg-12 add-merchan add-red">
+                    <ul class="col-lg-12 col-md-12">
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name" style="margin-top: 30px;">广告图片：</label>
+                            <img src="" class="pull-left add-ad-img">
+                            <button class="pull-left up-pics" style="margin-top: 18px;margin-left: 5px;">
+                                <i class="iconfont"></i>
+                            </button>
+                            <p class="col-lg-12 error" style="margin-top: 90px; color: #808080;">尺寸：480*100px</p>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">广告位置：</label>
+                            <select class="pull-left inputs inputs-money down-jt">
+                                <option class="pull-left" value="">请选择投放位置</option>
+                                <option class="pull-left" value="">前台首页</option>
+                                <option class="pull-left" value="">一元抢宝首页</option>
+                            </select>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">排列顺序：</label>
+                            <input type="text" placeholder="数字越小越靠前" class="pull-left inputs inputs-money">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">广告时间：</label>
+                            <input type="text" placeholder="开始时间" class="pull-left inputs inputs-money down-jt">
+                            <span class="pull-left hori">—</span>
+                            <input type="text" placeholder="截止时间" class="pull-left inputs inputs-money down-jt">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">链接地址：</label>
+                            <input type="text" placeholder="不跳转请填写“#”号" class="pull-left inputs">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 add-merchan" style="padding-top: 30px; padding-bottom: 130px;">
+                    <button class="btns inputs">确认添加</button>
+                </div>
+            </div>
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</html>

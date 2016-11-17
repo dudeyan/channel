@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <title>渠道管理中心</title>
+
+  <!-- css begin-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+  <!-- header begin header.html -->
+  <header class="row" id="header"></header>
+  <!-- header end -->
+
+  <!-- 内容 begin -->
+  <div class="content row">
+
+    <!-- left-menu begin left.html -->
+    <div class="pull-left left-menu" id="left"></div>
+    <!-- left-menu end -->
+
+    <!-- right-content begin -->
+    <div class="pull-left right-content">
+
+      <!-- manage-content begin -->
+      <div class="manage-content row">
+
+        <div class="btn-content receive-btn row size-16">
+          <span class="pull-left" style="line-height: 30px;">优品池-商品详情</span>
+        </div>
+
+        <!-- 列表/shop-list begin -->
+        <div class="shop-list back-white row">
+
+          <div class="row Youpin-div bor">
+
+            <div class="col-lg-12">
+              <img src="images/6.jpg" alt="" class="col-lg-12"/>
+            </div>
+
+            <div class="col-lg-12 p-ten back-white">
+              <p class="col-lg-12 Y-name">名名单多少个更新的</p>
+              <div class="col-lg-12 text-center size-13 s-rebate">
+                <p class="pull-left c-white s-rebate-num">7.5折</p>
+                <p class="pull-left less">减320</p>
+              </div>
+              <div class="ui-col">
+                <p class="pull-left s-Y-money">￥1280</p>
+                <p class="pull-left s-rebate-list">￥1280</p>
+              </div>
+            </div>
+
+            <div class="col-lg-12 p-ten m-t-ten back-white yellow-title">包装清单</div>
+            <div class="col-lg-12 back-white">
+              <table class="col-lg-12 packing-list" id="table-list">
+                <tbody>
+                <tr><th class="p-l-ten">名称</th><th>数量</th><th>单位</th></tr>
+                <tr>
+                  <td class="p-l-ten"><input type="text" name="menu" value="111" placeholder="例:红烧肉" readonly="readonly"></td>
+                  <td><input type="text" name="number" value="1份" placeholder="例:100" readonly="readonly"></td>
+                  <td><input type="text" name="price" value="个" placeholder="例:10" readonly="readonly"></td>
+                </tr>
+                <tr>
+                  <td class="p-l-ten"><input type="text" name="menu" value="222" placeholder="例:红烧肉" readonly="readonly"></td>
+                  <td><input type="text" name="number" value="1份" placeholder="例:100" readonly="readonly"></td>
+                  <td><input type="text" name="price" value="条" placeholder="例:10" readonly="readonly"></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-lg-12 p-ten m-t-ten back-white yellow-title">图文详情</div>
+            <div class="col-lg-12 back-white Y-Photo">
+              <img src="images/6.jpg" alt=""/>
+              <img src="images/6.jpg" alt=""/>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- manage-content end -->
+
+    </div><!-- right-content end -->
+
+  </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+  $("#left").load("left.html");
+  $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</html>

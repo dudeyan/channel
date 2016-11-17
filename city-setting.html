@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <div class="manage-content row">
+                <p class="col-lg-12 store-server">
+                    114设置
+                    <a href="#" class="pull-right"><button class="btn search w-100">114设置教程</button></a>
+                </p>
+            </div>
+
+
+            <!-- 114设置 begin -->
+            <div class="share-content m-h-fifty row">
+                <!--<div class="share-head col-lg-12">114设置</div>-->
+                <div class="col-lg-12 add-merchan share-input">
+                    <ul class="col-lg-12 col-md-12">
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 text-right label-name" style="margin-top: 30px;">LOGO：</label>
+                            <p class="pull-left">
+                                <img src="images/6.jpg" class="share-pic pull-left">
+                                <button class="pull-left up-pics"><i class="iconfont"></i></button>
+                            </p>
+                            <p class="pull-left pic-gs">尺寸：200x200px</p>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">114名称：</label>
+                            <input type="text" placeholder="请输入名称" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">技术支持：</label>
+                            <input type="text" placeholder="" class="pull-left inputs">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 分享 -->
+            <div class="share-content m-h-fifty m-t-ten row">
+                <div class="col-lg-12 add-merchan share-input">
+                    <ul class="col-lg-12 col-md-12">
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">首页分享标题：</label>
+                            <input type="text" placeholder="请输入首页分享标题" value="这里有很多优惠哦，快来免费领取吧！" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">分享简介：</label>
+                            <input type="text" placeholder="请输入分享简介" value="这里有吃喝玩乐等优惠券，快叫上小伙伴一起来领取吧！" class="pull-left inputs">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 详情页顶部信息 -->
+            <div class="share-content m-h-fifty m-t-ten row">
+                <div class="share-head col-lg-12 size-14">114店铺详情页顶部信息设置</div>
+
+                <div class="col-lg-12 add-merchan share-input">
+                    <ul class="col-lg-12 col-md-12">
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 text-right label-name" style="margin-top: 30px;">图片：</label>
+                            <p class="pull-left">
+                                <img src="images/6.jpg" class="share-pic pull-left">
+                                <button class="del-pic"><i class="iconfont">&#xe61f;</i></button>
+                                <button class="pull-left up-pics"><i class="iconfont"></i></button>
+                            </p>
+                            <p class="pull-left pic-gs">尺寸：100x100px</p>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">标题：</label>
+                            <input type="text" placeholder="请输入标题" value="" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">简介：</label>
+                            <input type="text" placeholder="请输入简介" value="" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">跳转链接：</label>
+                            <input type="text" placeholder="请输入跳转链接" value="" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">我要支持此店设置：</label>
+                            <input type="text" placeholder="最多6个字噢" value="" class="pull-left inputs">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 费用及协议 -->
+            <div class="share-content m-h-fifty m-t-ten row">
+                <div class="col-lg-12 add-merchan share-input">
+                    <ul class="col-lg-12 col-md-12">
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">个人114一年的费用：</label>
+                            <input type="text" placeholder="个人114一年的费用" value="" class="pull-left inputs inputs-money"><span class="pull-left m-l-ten">元</span>
+                            <label class="pull-left m-l-ten text-right label-name">商家114一年的费用：</label>
+                            <input type="text" placeholder="商家114一年的费用" value="" class="pull-left inputs inputs-money"><span class="pull-left m-l-ten">元</span>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">个人114两年的费用：</label>
+                            <input type="text" placeholder="个人114两年的费用" value="" class="pull-left inputs inputs-money"><span class="pull-left m-l-ten">元</span>
+                            <label class="pull-left m-l-ten text-right label-name">商家114两年的费用：</label>
+                            <input type="text" placeholder="商家114两年的费用" value="" class="pull-left inputs inputs-money"><span class="pull-left m-l-ten">元</span>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">个人114三年的费用：</label>
+                            <input type="text" placeholder="个人114三年的费用" value="" class="pull-left inputs inputs-money"><span class="pull-left m-l-ten">元</span>
+                            <label class="pull-left m-l-ten text-right label-name">商家114三年的费用：</label>
+                            <input type="text" placeholder="商家114三年的费用" value="" class="pull-left inputs inputs-money"><span class="pull-left m-l-ten">元</span>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">每天第二条费用设置：</label>
+                            <input type="text" placeholder="请输入费用" value="" class="pull-left inputs"><span class="pull-left m-l-ten">元</span>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">置顶费用设置：</label>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">1天：</label>
+                            <input type="text" placeholder="请输入费用" value="" class="pull-left inputs inputs-city">
+                            <span class="pull-left m-l-ten m-r-ten">元</span>
+                            <span class="pull-left m-l-ten text-right">3天：</span>
+                            <input type="text" placeholder="请输入费用" value="" class="pull-left inputs inputs-city">
+                            <span class="pull-left m-l-ten m-r-ten">元</span>
+                            <span class="pull-left m-l-ten text-right">7天：</span>
+                            <input type="text" placeholder="请输入费用" value="" class="pull-left inputs inputs-city">
+                            <span class="pull-left m-l-ten m-r-ten">元</span>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">15天：</label>
+                            <input type="text" placeholder="请输入费用" value="" class="pull-left inputs inputs-city">
+                            <span class="pull-left m-l-ten m-r-ten">元</span>
+                            <span class="pull-left m-l-ten text-right">30天：</span>
+                            <input type="text" placeholder="请输入费用" value="" class="pull-left inputs inputs-city">
+                            <span class="pull-left m-l-ten m-r-ten">元</span>
+                            <span class="pull-left m-l-ten text-right">60天：</span>
+                            <input type="text" placeholder="请输入费用" value="" class="pull-left inputs inputs-city">
+                            <span class="pull-left m-l-ten m-r-ten">元</span>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">100天：</label>
+                            <input type="text" placeholder="请输入费用" value="" class="pull-left inputs inputs-city">
+                            <span class="pull-left m-l-ten m-r-ten">元</span>
+                            <span class="pull-left m-l-ten text-right">200天：</span>
+                            <input type="text" placeholder="请输入费用" value="" class="pull-left inputs inputs-city">
+                            <span class="pull-left m-l-ten m-r-ten">元</span>
+                            <span class="pull-left m-l-ten text-right">365天：</span>
+                            <input type="text" placeholder="请输入费用" value="" class="pull-left inputs inputs-city">
+                            <span class="pull-left m-l-ten m-r-ten">元</span>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">114协议：</label>
+                            <textarea class="pull-left inputs textarea" placeholder=""></textarea>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 add-merchan share-input">
+                    <button class="btns inputs">确认修改</button>
+                </div>
+            </div>
+            <!-- 114设置 end -->
+
+            <!-- 修改成功 begin -->
+            <div class="prom dis-none">
+                <div class="piece-head text-center"><button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="loca-success text-center"><i class="iconfont">&#xe61a;</i>修改成功</p>
+            </div><!-- 修改成功 end -->
+
+            <!-- 修改失败 begin -->
+            <div class="prom dis-none">
+                <div class="piece-head text-center"><button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="loca-success loca-errow text-center"><i class="iconfont">&#xe61b;</i>修改失败</p>
+            </div><!-- 修改失败 end -->
+
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</html>

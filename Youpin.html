@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <title>渠道管理中心</title>
+
+  <!-- css begin-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+  <!-- header begin header.html -->
+  <header class="row" id="header"></header>
+  <!-- header end -->
+
+  <!-- 内容 begin -->
+  <div class="content row">
+
+    <!-- left-menu begin left.html -->
+    <div class="pull-left left-menu" id="left"></div>
+    <!-- left-menu end -->
+
+    <!-- right-content begin -->
+    <div class="pull-left right-content">
+
+      <!-- manage-content begin -->
+      <div class="manage-content row">
+
+        <div class="btn-content receive-btn row" style="font-size: 16px;">
+          <span class="pull-left" style="line-height: 30px;">优品池</span>
+        </div>
+
+        <!-- 列表/shop-list begin -->
+        <div class="shop-list back-white row">
+
+          <div class="col-lg-12 p-twenty dis-none">
+            <button class="pull-left btn btn-default w-80 m-r-ten Y-btn act">全部</button>
+            <button class="pull-left btn btn-default w-80 m-r-ten">申请上架</button>
+            <button class="pull-left btn btn-default w-80 m-r-ten">已上架</button>
+            <button class="pull-left btn btn-default w-80 m-r-ten">已下架</button>
+          </div>
+
+          <table class="col-lg-12 text-center manage-table">
+            <thead>
+            <tr>
+              <th width="140">商品图片</th>
+              <th width="190">商品名称</th>
+              <th width="90">总数</th>
+              <th width="90">进货</th>
+              <th width="90">销量</th>
+              <th width="100">售价</th>
+              <th width="80">佣金</th>
+              <th width="100">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="shop-pic">
+                <img src="images/6.jpg">
+              </td>
+              <td>
+                美味乐食汇美味乐食汇美味乐食汇
+              </td>
+              <td>100</td>
+              <td>10</td>
+              <td>0</td>
+              <td>￥998</td>
+              <td>￥10</td>
+              <td class="product-btn">
+                <a href="Youpin-details.html" class="view-more no-fillet">商品详情</a>
+                <a class="view-more no-fillet">链接地址</a>
+              </td>
+            </tr>
+            <tr class="back-fafbff">
+              <td class="shop-pic">
+                <img src="images/6.jpg">
+              </td>
+              <td>
+                美味乐食汇美味乐食汇美味乐食汇
+              </td>
+              <td>100</td>
+              <td>10</td>
+              <td>0</td>
+              <td>￥998</td>
+              <td>￥10</td>
+              <td class="product-btn">
+                <a href="Youpin-details.html" class="view-more no-fillet">商品详情</a>
+                <a class="view-more no-fillet">链接地址</a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- 列表/shop-list end -->
+
+        <div class="row pull-right paging">
+          <button class="pull-left shouye">首页</button>
+          <button class="pull-left before"><i class="iconfont befores">&#xe61d;</i></button>
+          <input type="text" value="1" class="pull-left paging-input text-center" placeholder="">
+          <button class="pull-left before after"><i class="iconfont">&#xe61d;</i></button>
+          <button class="pull-left shouye">尾页</button>
+          <span class="pull-left">共9页/45条数据</span>
+        </div>
+
+      </div>
+      <!-- manage-content end -->
+
+      <!-- 商品信息弹出层 begin -->
+      <div class="prom dis-none">
+        <div class="piece-head text-center">商品信息<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+        <div class="mentou" style="margin: 25px 140px 0;"></div>
+        <p class="shop-link">
+          商品链接：<a>http://18.xshapp.com/home</a>
+          <span class="copy dis-none">已复制</span><!-- 复制成功后显示一下 然后消失 -->
+        </p>
+        <div class="pull-left shop-link m-b-ten">
+          <p class="pull-left">下载方式：</p>
+          <p class="pull-left">1.右键点击二维码，保存图片到本地<br>2.点击链接，自动复制链接地址</p>
+        </div>
+      </div>
+      <!-- 商品信息弹出层 end -->
+
+    </div><!-- right-content end -->
+
+  </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+  $("#left").load("left.html");
+  $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</html>

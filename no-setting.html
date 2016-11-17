@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <div class="col-lg-12 manage-content setting">
+                <p class="col-lg-12 store-server" style="font-size: 16px;">微信公众号设置</p>
+
+                <div class="col-lg-12 add-merchan">
+                    <ul class="col-lg-12 col-md-12">
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">原始ID：</label>
+                            <input type="text" placeholder="" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">AppID：</label>
+                            <input type="tel" placeholder="" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">AppSecret：</label>
+                            <input type="tel" placeholder="" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">Token：</label>
+                            <input type="tel" placeholder="" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">EncodingAESkey：</label>
+                            <input type="tel" placeholder="" class="pull-left inputs">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 add-merchan">
+                    <button class="btns inputs">提交</button>
+                </div>
+                <div class="col-lg-12 col-md-12 text-left note body-white">
+                    <p>注意：微信公众平台的消息解密方式设置为“明文模式”</p>
+                    <p>一定、一定、一定要把小生活的微信开发接口URL，填到微信公众号开发接口URL中。</p>
+                    <p>https://cs.xshapp.com/v1/weixin/check/?unid=10143&city=sz</p>
+                    <p>怎么设置</p>
+                    <p>1.从电脑端进入您的微信公众平台。<br><span style="margin-left: 15px;">链接：https://mp.weixin.qq.com/cgi-bin/loginpage?t=wxm2-login&lang=zh_CN</span></p>
+                    <p>2.进入“设置”模块的“公众号设置”页面复制“原始ID”粘贴到对应的入栏。</p>
+                    <p>
+                        3.进入“开发”模块的“基本配置”页面，复制“AppID”和“AppSecret”粘贴到对应的输入栏。<br>点击“修改配置”按钮，复制“Token”和“EncodingAESkey”粘贴到对应的输入栏。
+                    </p>
+                    <p>4.“消息解密方式”勾选为“明文模式”</p>
+                </div>
+            </div>
+        </div><!-- right-content end -->
+
+    </div>
+    <!-- 内容 begin -->
+</div>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</body>
+</html>

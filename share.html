@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <!-- 当前的分享设置样式 begin -->
+            <div class="share-content row dis-none">
+                <div class="share-head col-lg-12">联盟管理-分享设置</div>
+
+                <div class="col-lg-12 text-center">
+                    <ul class="col-lg-12 share-set">
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs" style="margin-top: 13px;">LOGO：</label>
+                            <p class="pull-left">
+                                <img ng-src="http://pic.xshapp.com/201605/b2dd123e_0_200_150_1463038021.jpeg@100h_100w_0e" style="width: 100px; height:100px;" class="share-pic pull-left uploadShareImg" src="http://pic.xshapp.com/201605/b2dd123e_0_200_150_1463038021.jpeg@100h_100w_0e">
+                                <input type="text" class="pull-left input-file js-up-pic" name="file" ngf-select="uploadFiles($file, $invalidFiles)" style="display:inline-block;">
+                                <a class="pull-left file-pic pic-logo">选择图片</a>
+                            </p>
+                            <p class="pull-left pic-gs" style="margin-left: -176px;margin-top:105px;">图片格式：jpg，200x200px</p>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs">站点名称：</label>
+                            <input type="text" class="col-lg-8 input-box ng-pristine ng-untouched ng-valid" ng-model="setting.share_name" placeholder="请在此输入">
+                            <a class="iconfont pull-left error-diff ok-dui" id="siteName"></a>
+                            <!-- 简介 -->
+                            <div class="tag pull-left dis-none" id="siteExplain">
+                                站点名称：将出现在用户领取成功以后提醒用户关注公众平台。
+                                <div class="arrow"><em></em><span></span></div>
+                            </div><!-- 简介 -->
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs">首页分享标题：</label>
+                            <input type="text" class="col-lg-8 input-box ng-pristine ng-untouched ng-valid" ng-model="setting.share_title" placeholder="请在此输入">
+                            <a class="iconfont pull-left error-diff ok-dui" id="pageName"></a>
+                            <!-- 简介 -->
+                            <div class="tag pull-left dis-none" id="pageExplain">
+                                首页分享标题：将出现在你每次分享到朋友圈或朋友时的标题。
+                                <div class="arrow"><em></em><span></span></div>
+                            </div><!-- 简介 -->
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs">分享简介：</label>
+                            <input type="text" ng-model="setting.share_desc" class="col-lg-8 input-box ng-pristine ng-untouched ng-valid" placeholder="请在此输入">
+                            <a class="iconfont pull-left error-diff ok-dui" id="shareSimple"></a>
+                            <!-- 简介 -->
+                            <div class="tag pull-left dis-none" id="shareExplain">
+                                首页分享简介：将出现在你每次分享到朋友圈或朋友时的标题下面的一段文字，主要用于补充分享内容的作用。
+                                <div class="arrow"><em></em><span></span></div>
+                            </div><!-- 简介 -->
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs">全局关注：</label>
+                            <input type="text" ng-model="setting.share_follow" class="col-lg-8 input-box ng-pristine ng-untouched ng-valid" placeholder="请在此输入">
+                            <a class="iconfont pull-left error-diff ok-dui" id="globleAttention"></a>
+                            <!-- 简介 -->
+                            <div class="tag pull-left dis-none" id="globleExplain">
+                                全局关注：一键设置整个平台所有页面的关注地址，设置以后再优惠详情底部、领取成功页面、店铺首页等地方，点击关注将跳转到你设置的链接地址。
+                                <div class="arrow"><em></em><span></span></div>
+                            </div><!-- 简介 -->
+                        </li>
+
+
+                        <!-- 秒杀分享设置 begin -->
+                        <li class="col-lg-12 bor-t" style="margin-top: 40px; padding-top: 30px;">
+                            <label class="col-lg-4 label-boxs" style="margin-top: 13px;"><span class="pull-left size-16">秒杀列表分享设置：</span>LOGO：</label>
+                            <p class="pull-left">
+                                <img class="share-pic pull-left uploadShareImg" src="http://pic.xshapp.com/201605/b2dd123e_0_200_150_1463038021.jpeg@100h_100w_0e">
+                                <input type="text" class="pull-left input-file js-up-pic" name="file" style="display:inline-block;">
+                                <a class="pull-left file-pic pic-logo">选择图片</a>
+                            </p>
+                            <p class="pull-left pic-gs" style="margin-left: -176px;margin-top:105px;">图片格式：jpg，200x200px</p>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs">秒杀分享标题：</label>
+                            <input type="text" class="col-lg-8 input-box" placeholder="请在此输入">
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 label-boxs">分享简介：</label>
+                            <input type="text" class="col-lg-8 input-box" placeholder="请在此输入">
+                        </li>
+                        <!-- 秒杀分享设置 end -->
+
+
+                        <li class="col-lg-12">
+                            <a class="col-lg-4"></a><button class="col-lg-8 btn input-box btn-theme" id="editShareSet" ng-click="update()">确认修改</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- 最新样式的分享设置 begin -->
+            <div class="share-content row ">
+                <div class="share-head col-lg-12">前端设置-分享设置</div>
+
+                <div class="col-lg-12 add-merchan share-input">
+                    <ul class="col-lg-12 col-md-12 m-b-ten">
+                        <li class="col-lg-12">
+                            <label class="col-lg-4 text-right label-name" style="margin-top: 30px;">LOGO：</label>
+                            <p class="pull-left">
+                                <img src="images/6.jpg" class="share-pic pull-left">
+                                <button class="pull-left up-pics"><i class="iconfont"></i></button>
+                            </p>
+                            <p class="pull-left pic-gs">尺寸：200x200px</p>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">站点名称：</label>
+                            <input type="text" placeholder="请输入名称" class="pull-left inputs">
+                            <a class="iconfont pull-left error-diff">&#xe62c;</a>
+                            <!-- 简介 -->
+                            <div class="tag pull-left dis-none" style="line-height: 18px;">
+                                站点名称：将出现在用户领取成功以后提醒用户关注公众平台。
+                                <div class="arrow"><em></em><span></span></div>
+                            </div><!-- 简介 -->
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">首页关注引导语：</label>
+                            <input type="text" placeholder="请输入引导语" value="吃喝玩乐啥都有！" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">首页分享标题：</label>
+                            <input type="text" placeholder="请输入首页分享标题" value="这里有很多优惠哦，快来免费领取吧！" class="pull-left inputs">
+                            <a class="iconfont pull-left error-diff">&#xe62c;</a>
+                            <!-- 简介 -->
+                            <div class="tag pull-left dis-none" style="line-height: 18px;">
+                                首页分享标题：将出现在你每次分享到朋友圈或朋友时的标题。
+                                <div class="arrow"><em></em><span></span></div>
+                            </div><!-- 简介 -->
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">分享简介：</label>
+                            <input type="text" placeholder="请输入分享简介" value="这里有吃喝玩乐等优惠券，快叫上小伙伴一起来领取吧！" class="pull-left inputs">
+                            <a class="iconfont pull-left error-diff">&#xe62c;</a>
+                            <!-- 简介 -->
+                            <div class="tag pull-left dis-none" style="line-height: 18px;">
+                                首页分享简介：将出现在你每次分享到朋友圈或朋友时的标题下面的一段文字，主要用于补充分享内容的作用。
+                                <div class="arrow"><em></em><span></span></div>
+                            </div><!-- 简介 -->
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">全局关注：</label>
+                            <input type="text" placeholder="请输入全局关注地址" value="" class="pull-left inputs">
+                            <a class="iconfont pull-left error-diff">&#xe62c;</a>
+                            <!-- 简介 -->
+                            <div class="tag pull-left dis-none" style="line-height: 18px;">
+                                全局关注：一键设置整个平台所有页面的关注地址，设置以后再优惠详情底部、领取成功页面、店铺首页等地方，点击关注将跳转到你设置的链接地址。
+                                <div class="arrow"><em></em><span></span></div>
+                            </div><!-- 简介 -->
+                        </li>
+                    </ul>
+
+
+                    <ul class="col-lg-12 col-md-12 m-t-ten bor-t">
+                        <li class="col-lg-12">
+                            <span class="col-lg-12 size-16">秒杀列表分享设置</span>
+                            <label class="col-lg-4 text-right label-name" style="margin-top: 30px;">LOGO：</label>
+                            <p class="pull-left">
+                                <img src="images/6.jpg" class="share-pic pull-left">
+                                <button class="pull-left up-pics"><i class="iconfont"></i></button>
+                            </p>
+                            <p class="pull-left pic-gs">尺寸：200x200px</p>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">秒杀列表分享标题：</label>
+                            <input type="text" placeholder="" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">分享简介：</label>
+                            <input type="text" placeholder="" value="" class="pull-left inputs">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 add-merchan share-input">
+                    <button class="btns inputs">确认修改</button>
+                </div>
+
+            </div><!-- 分享设置 end -->
+
+            <!-- 修改成功 begin -->
+            <div class="prom dis-none">
+                <div class="piece-head text-center"><button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="loca-success text-center"><i class="iconfont">&#xe61a;</i>修改成功</p>
+            </div><!-- 修改成功 end -->
+
+            <!-- 修改失败 begin -->
+            <div class="prom dis-none">
+                <div class="piece-head text-center"><button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="loca-success loca-errow text-center"><i class="iconfont">&#xe61b;</i>修改失败</p>
+            </div><!-- 修改失败 end -->
+
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</html>

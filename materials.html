@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <!-- manage-content begin -->
+            <div class="manage-content row">
+                <!-- 筛选 begin -->
+                <div class="filter">
+                    <div class="btn-content row">
+                        <button class="pull-left btns active">全部</button>
+                        <button class="pull-left btns">摇一摇</button>
+                        <button class="pull-left btns">物料</button>
+                        <input type="text" placeholder="请输入店铺名称" class="pull-left inputs">
+                        <button class="btn search">搜索</button>
+                    </div>
+                </div><!-- 筛选 end -->
+
+                <!-- 店铺列表/shop-list begin -->
+                <div class="shop-list row">
+                    <table class="col-lg-12 text-center manage-table daijin">
+                        <thead>
+                        <tr>
+                            <th>店铺名称</th>
+                            <th>类别</th>
+                            <th>价格/数量</th>
+                            <th width="190">时间</th>
+                            <th width="150">联系方式</th>
+                            <th>支付状态</th>
+                            <th>物流</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>李家菜馆</td>
+                            <td>摇一摇</td>
+                            <td>￥3.00x5</td>
+                            <td>2015-10-09 10:37</td>
+                            <td width="150" class="text-left">深圳市龙岗区大运软件小镇8栋301<br><span class="tel">TEL：32985200</span></td>
+                            <td>已支付</td>
+                            <td width="180">无</td>
+                        </tr>
+                        <tr>
+                            <td>李家菜馆</td>
+                            <td>物料</td>
+                            <td>￥3.00x5</td>
+                            <td>2015-10-09</td>
+                            <td class="text-left">深圳市龙岗区大运软件小镇8栋301<br><span class="tel">TEL：32985200</span></td>
+                            <td>已支付</td>
+                            <td>1545646541564</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div><!-- 店铺列表/shop-list end -->
+
+                <div class="row pull-right paging">
+                    <button class="pull-left shouye">首页</button>
+                    <button class="pull-left before"><i class="iconfont befores">&#xe61d;</i></button>
+                    <input type="text" value="1" class="pull-left paging-input text-center" placeholder="">
+                    <button class="pull-left before after"><i class="iconfont">&#xe61d;</i></button>
+                    <button class="pull-left shouye">尾页</button>
+                    <span class="pull-left">共9页/45条数据</span>
+                </div>
+
+            </div><!-- manage-content end -->
+
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</body>
+</html>

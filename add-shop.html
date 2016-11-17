@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <div class="col-lg-12 manage-content">
+                <p class="col-lg-12 store-server">商户服务-代理开店</p>
+
+                <div class="col-lg-12 add-merchan">
+                    <ul class="col-lg-12 col-md-12">
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">店铺名称：</label>
+                            <input type="text" placeholder="请输入店铺名称" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">账号：<span class="shop-mobile">（手机号码）</span></label>
+                            <input type="tel" placeholder="请输入手机号码" class="pull-left inputs inputs-money">
+                            <span class="error">此号码已创建过店铺，不能再次创建！</span>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">密码：</label>
+                            <input type="password" placeholder="不少于6位字符" class="pull-left inputs inputs-money">
+                            <span class="error">请输入正确的数字、字母、或数字字母组合！</span>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">店铺分类：</label>
+                            <select class="pull-left inputs inputs-money down-jt">
+                                <option class="pull-left" value="">美食</option>
+                                <option class="pull-left" value="">美食</option>
+                                <option class="pull-left" value="">美食</option>
+                                <option class="pull-left" value="">美食</option>
+                            </select>
+                            <span class="pull-left hori">—</span>
+                            <select class="pull-left inputs inputs-money down-jt">
+                                <option class="pull-left" value="">美食</option>
+                            </select>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">选择商圈：</label>
+                            <select class="pull-left inputs inputs-money down-jt">
+                                <option class="pull-left" value="">龙岗区</option>
+                            </select>
+                            <span class="pull-left hori">—</span>
+                            <select class="pull-left inputs inputs-money down-jt">
+                                <option class="pull-left" value="">大运</option>
+                            </select>
+                        </li>
+                        <li class="col-lg-12 col-md-12">
+                            <label class="pull-left text-right label-name">店铺地址：</label>
+                            <input type="text" placeholder="请输入店铺名称" class="pull-left inputs">
+                        </li>
+                        <li class="col-lg-12 col-md-12" style="margin-top: 20px">
+                            <div class="serachAddr" style="padding-left: 180px;">
+                                <input type="text" class="pull-left inputs" style="width: 565px;" placeholder="根据地址在地图中显示">
+                                <button type="button" class="pull-left btns carry">查询地址</button>
+                            </div>
+                            <div class="col-lg-12 store-map" id="mapWin">
+                                <div id="map" style="width:700px;height:300px;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 add-merchan">
+                    <button class="btns inputs">创建店铺</button>
+                </div>
+            </div>
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</html>

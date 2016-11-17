@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <!-- manage-content begin -->
+            <div class="manage-content row">
+
+                <!-- 筛选 begin -->
+                <div class="filter">
+                    <div class="btn-content row">
+                        <button class="pull-left btns active">全部</button>
+                        <button class="pull-left btns">已过期</button>
+                        <button class="pull-left btns">未过期</button>
+                        <button class="pull-left btns">未审核</button>
+                        <input type="text" placeholder="请输入114名称或店铺名称" class="pull-left inputs" style="width: 185px;">
+                        <button class="btn search">搜索</button>
+                        <a href="city-add.html" class="pull-right"><button class="btn search" style="width: 100px;">添加商家144</button></a>
+                        <a href="city-add-person.html" class="pull-right"><button class="btn search" style="width: 100px;">添加个人144</button></a>
+                        <a href="city-add-other.html" class="pull-right"><button class="btn search" style="width: 100px;">添加其他</button></a>
+                    </div>
+                </div>
+                <!-- 筛选 end -->
+
+                <!-- 列表/shop-list begin -->
+                <div class="shop-list row">
+                    <table class="col-lg-12 text-center manage-table">
+                        <thead>
+                        <tr>
+                            <th width="200">老板信息</th>
+                            <th width="300">店铺信息</th>
+                            <th width="150">到期时间</th>
+                            <th width="80">状态</th>
+                            <th width="100">功能<span class="red dis-block size-12">前端显示：<br>审核 + 支付年限</span></th>
+                            <th width="100">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-left">
+                                <p class="product">微信号：13530000000</p>
+                                <p class="product">微信名：小s</p>
+                                <p class="product">114ID：32656</p>
+                            </td>
+                            <td class="text-left">
+                                <p class="product f-toe col-lg-12">商户名称：小生活</p>
+                                <p class="product f-toe col-lg-6">申请人：小s</p>
+                                <p class="product col-lg-6">电话：1330000000</p>
+                                <p class="col-lg-6 product">关注量：8</p>
+                                <p class="col-lg-6 product">预约量：5</p>
+                                <p class="col-lg-12 xshShopId">
+                                    <span>店铺ID：</span>
+                                    <input type="number" class="snapshot" placeholder=""/>
+                                    <button class="btn btn-theme">确定</button>
+                                </p>
+                            </td>
+                            <td>2016-04-08 12:00</td>
+                            <td class="product-btn">
+                                <a class="view-more no-fillet">支付一年</a>
+                                <a class="view-more no-fillet">支付两年</a>
+                                <a class="view-more no-fillet">支付三年</a>
+                            </td>
+                            <td class="product-btn">
+                                <a class="view-more no-fillet">审核</a><!-- 已审核 加上class act -->
+                                <a class="view-more no-fillet" style="display: none">店铺ID</a>
+                                <a class="view-more no-fillet">用户ID</a>
+                                <a class="view-more no-fillet">推荐</a>
+                            </td>
+                            <td class="product-btn relese">
+                                <a class="recom-num">个</a>
+                                <a class="view-more no-fillet" href="city-add-secondGoods.html">发布信息</a>
+                                <a class="view-more no-fillet">修改</a>
+                                <a class="view-more no-fillet">删除</a>
+                                <a class="view-more no-fillet">关注/预约</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                <p class="product">微信号：13530000000</p>
+                                <p class="product">微信名：小s</p>
+                            </td>
+                            <td class="text-left">
+                                <p class="product f-toe col-lg-12">商户名称：小生活</p>
+                                <p class="product f-toe col-lg-6">申请人：小s</p>
+                                <p class="product col-lg-6">电话：1330000000</p>
+                                <p class="col-lg-6 product">关注量：8</p>
+                                <p class="col-lg-6 product">预约量：5</p>
+                                <p class="col-lg-12 xshShopId">
+                                    <span>店铺ID：</span>
+                                    <input type="number" class="snapshot" placeholder=""/>
+                                    <button class="btn btn-theme">确定</button>
+                                </p>
+                            </td>
+                            <td>2016-04-08 12:00</td>
+                            <td class="product-btn">
+                                <a class="view-more no-fillet">支付一年</a>
+                                <a class="view-more no-fillet act">支付两年</a>
+                                <a class="view-more no-fillet">支付三年</a>
+                            </td>
+                            <td class="product-btn relese">
+                                <a class="view-more no-fillet act">审核</a><!-- 已审核 加上class act -->
+                                <a class="view-more no-fillet" style="display: none">店铺ID</a>
+                                <a class="view-more no-fillet">用户ID</a>
+                                <a class="view-more no-fillet rec-shop act">推荐：1</a>
+                            </td>
+                            <td class="product-btn relese">
+                                <a class="recom-num">商</a>
+                                <a class="view-more no-fillet" href="city-add-secondGoods.html">发布信息</a>
+                                <a class="view-more no-fillet">修改</a>
+                                <a class="view-more no-fillet">删除</a>
+                                <a class="view-more no-fillet">关注/预约</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 列表/shop-list end -->
+
+                <div class="row pull-right paging">
+                    <button class="pull-left shouye">首页</button>
+                    <button class="pull-left before"><i class="iconfont befores">&#xe61d;</i></button>
+                    <input type="text" value="1" class="pull-left paging-input text-center" placeholder="">
+                    <button class="pull-left before after"><i class="iconfont">&#xe61d;</i></button>
+                    <button class="pull-left shouye">尾页</button>
+                    <span class="pull-left">共9页/45条数据</span>
+                </div>
+
+            </div>
+            <!-- manage-content end -->
+
+            <!-- 商品信息弹出层 begin -->
+            <div class="prom dis-none">
+                <div class="piece-head text-center">商品信息<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <div class="mentou" style="margin: 25px 140px 0;"></div>
+                <p class="shop-link">
+                    商品链接：<a>http://18.xshapp.com/home</a>
+                    <span class="copy dis-none">已复制</span><!-- 复制成功后显示一下 然后消失 -->
+                </p>
+                <div class="pull-left shop-link m-b-ten">
+                    <p class="pull-left">下载方式：</p>
+                    <p class="pull-left">1.右键点击二维码，保存图片到本地<br>2.点击链接，自动复制链接地址</p>
+                </div>
+            </div>
+            <!-- 商品信息弹出层 end -->
+
+            <!-- 推荐弹出层 begin -->
+            <div class="prom recommendCen dis-none">
+                <div class="piece-head text-center">推荐<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <div class="text-center prom-loca">
+                    <p>推荐到：第<input type="text" value="" class="text-center loca" placeholder="">位</p>
+                    <p class="loca-ts">热门推荐总共10个位置(可重复)。可以填0-10。0为取消推荐</p>
+                    <button class="btn input-box btn-theme loca-btn">确定</button>
+                </div>
+                <p class="loca-success text-center dis-none"><i class="iconfont">&#xe61a;</i>推荐成功</p>
+                <p class="loca-success loca-errow text-center dis-none"><i class="iconfont">&#xe61b;</i>推荐失败</p>
+            </div>
+            <!-- 推荐弹出层 end -->
+
+            <!-- 删除提示层 begin -->
+            <div class="prom del-prom text-center dis-none">
+                <div class="piece-head">
+                    删除<button class="del"><i class="iconfont">&#xe61f;</i></button>
+                </div>
+                <p class="cert-word">确定删除此商品？</p>
+                <button class="btn btn-theme del-btn">确定</button>
+            </div>
+            <!-- 删除提示层 end -->
+
+            <!-- 删除成功提示层 begin -->
+            <div class="prom succ-prom text-center dis-none">删除成功！</div>
+            <!-- 删除成功提示层 end -->
+
+            <!-- 店铺ID begin -->
+            <div class="prom del-prom dis-none">
+                <div class="piece-head text-center">店铺ID<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="cert-word text-center">
+                    <input type="text" class="loca area-input" placeholder="请输入店铺ID"/>
+                </p>
+                <p class="text-center"><button class="btn btn-theme del-btn">确认</button></p>
+            </div>
+            <!-- 店铺ID end -->
+
+            <!-- 关注/预约 begin -->
+            <div class="prom del-prom dis-none">
+                <div class="piece-head text-center">修改<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="cert-word text-center">
+                    <span style="font-size: 14px;">关注量：</span><input type="text" class="loca area-input" placeholder="请输入关注量"/>
+                </p>
+                <p class="m-t-ten text-center">
+                    <span>预约量：</span><input type="text" class="loca area-input" placeholder="请输入预约量"/>
+                </p>
+                <p class="m-b-ten text-center"><button class="btn btn-theme del-btn">确认</button></p>
+            </div>
+            <!-- 关注/预约 end -->
+
+            <!-- 用户ID begin -->
+            <div class="prom del-prom dis-none">
+                <div class="piece-head text-center">用户ID<button class="del"><i class="iconfont">&#xe61f;</i></button></div>
+                <p class="cert-word text-center">
+                    <input type="text" class="loca area-input" placeholder="请输入用户ID"/>
+                </p>
+                <p class="text-center"><button class="btn btn-theme del-btn">确认</button></p>
+            </div>
+            <!-- 用户ID end -->
+
+        </div><!-- right-content end -->
+    </div>
+</div><!-- container-fluid end -->
+
+</body>
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</html>

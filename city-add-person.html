@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <div class="col-lg-12 manage-content">
+                <p class="col-lg-12 store-server">城市114-发布管理-添加114</p>
+
+                <div class="col-lg-12 add-merchan">
+                    <ul class="col-lg-12">
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name red">微友圈信息</label>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name"><span class="red">*</span>用户ID：</label>
+                            <input type="text" placeholder="请输入用户ID" class="pull-left inputs inputs-money">
+                            <p class="pull-left error">用户ID可以在用户个人中心获取，可以让用户发给你</p>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">老板微信号：</label>
+                            <input type="text" placeholder="老板微信号" class="pull-left inputs inputs-money">
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">老板微信名称：</label>
+                            <input type="tel" placeholder="老板微信名称" class="pull-left inputs inputs-money">
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">老板简介：</label>
+                            <input type="tel" placeholder="老板一句话介绍" class="pull-left inputs inputs-money">
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name">英俊帅气男老板：</label>
+                            <input type="radio" name="sex" data-id="1" class="pull-left check-box boss" placeholder="" checked>
+                            <label class="pull-left text-right label-name">温柔美丽女老板：</label>
+                            <input type="radio" name="sex" data-id="2" class="pull-left check-box boss" placeholder="">
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name boss-name">老板头像：<br><span></span></label>
+                            <div class="pull-left relese">
+                                <img src="images/6.jpg" alt="" class="boss-pic"/>
+                                <button class="del"><i class="iconfont">&#xe61f;</i></button>
+                                <p class="refund-way line-twenty">尺寸：200*200px</p>
+                            </div>
+                            <button class="pull-left up-pics boss-up"><i class="iconfont">&#xe628;</i></button>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name boss-name">老板微信二维码：</label>
+                            <div class="pull-left relese">
+                                <img src="images/6.jpg" alt="" class="boss-pic"/>
+                                <button class="del"><i class="iconfont">&#xe61f;</i></button>
+                                <p class="refund-way line-twenty">尺寸：200*200px</p>
+                            </div>
+                            <button class="pull-left up-pics boss-up"><i class="iconfont">&#xe628;</i></button>
+                        </li>
+                        <li class="col-lg-12">
+                            <label class="pull-left text-right label-name"><span class="red">*</span>电话号码：</label>
+                            <input type="number" placeholder="必填，固话请加区号" class="pull-left inputs inputs-money">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 add-merchan">
+                    <button class="btns inputs">确定</button>
+                </div>
+            </div>
+        </div><!-- right-content end -->
+
+        <!-- 成功提示层 begin -->
+        <div class="prom succ-prom text-center dis-none">添加成功！</div>
+        <!-- 成功提示层 end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+</body>
+
+</html>

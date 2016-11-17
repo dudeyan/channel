@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <title>渠道管理中心</title>
+
+  <!-- css begin-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- css end-->
+
+</head>
+<body>
+
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+  <!-- header begin header.html -->
+  <header class="row" id="header"></header>
+  <!-- header end -->
+
+  <!-- 内容 begin -->
+  <div class="content row">
+
+    <!-- left-menu begin left.html -->
+    <div class="pull-left left-menu" id="left"></div>
+    <!-- left-menu end -->
+
+    <!-- right-content begin -->
+    <div class="pull-left right-content">
+
+
+      <!-- 收款吧 -->
+      <div class="manage-content row">
+        <p class="col-lg-12 store-server">收款吧-收款明细</p>
+        <table class="col-lg-12 text-center buy-table">
+          <thead>
+          <tr>
+            <th>店铺</th>
+            <th>时间</th>
+            <th>总金额</th>
+            <th>提成比例</th>
+            <th>联盟入账金额</th>
+            <th>支付方式</th>
+            <th>商户单号</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td >2015-08-24 05:00</td>
+            <td>鬼情123456</td>
+            <td>￥1.00</td>
+            <td>0.1%</td>
+            <td>￥0.1</td>
+            <td>微信支付</td>
+            <td class="relative">
+              <span>......6</span>
+              <!-- 支付单号 begin -->
+              <div class="tag pull-left snapshot-prom pay-num dis-none">
+                <div class="int-title">
+                  <p>支付单号：<span>9566556562665</span></p>
+                  <p class="refund-way">温馨提示：点一下复制支付单号</p>
+                </div>
+                <div class="arrow arrows"><em></em><span></span></div>
+              </div>
+              <!-- 支付单号 end -->
+            </td>
+          </tr>
+          <tr class="back-gray">
+            <td>鬼情123456</td>
+            <td>2015-08-24 05:00</td>
+            <td>￥1.00</td>
+            <td>0.1%</td>
+            <td>￥0.1</td>
+            <td>微信支付</td>
+            <td class="relative">
+              <span>......46</span>
+              <!-- 支付单号 begin -->
+              <div class="tag pull-left snapshot-prom pay-num dis-none">
+                <div class="int-title">
+                  <p>支付单号：<span>9566556562646</span></p>
+                  <p class="refund-way">温馨提示：点一下复制支付单号</p>
+                </div>
+                <div class="arrow arrows"><em></em><span></span></div>
+              </div>
+              <!-- 支付单号 end -->
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div><!-- right-content end -->
+
+  </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+  $("#left").load("left.html");
+  $("#header").load("header.html");
+</script>
+<!-- js end -->
+</body>
+</html>

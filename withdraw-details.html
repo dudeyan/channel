@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>渠道管理中心</title>
+
+    <!-- css begin-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css end-->
+
+</head>
+<body>
+<!-- container-fluid begin -->
+<div class="container-fluid row">
+
+    <!-- header begin header.html -->
+    <header class="row" id="header"></header>
+    <!-- header end -->
+
+    <!-- 内容 begin -->
+    <div class="content row">
+
+        <!-- left-menu begin left.html -->
+        <div class="pull-left left-menu" id="left"></div>
+        <!-- left-menu end -->
+
+        <!-- right-content begin -->
+        <div class="pull-left right-content">
+
+            <div class="share-content row">
+                <div class="share-head col-lg-12">前端设置-提现-体现明细</div>
+
+                <!-- 提现列表 begin -->
+                <div class="shop-list col-lg-12">
+                    <table class="col-lg-12 text-center manage-table member">
+                        <thead>
+                        <tr>
+                            <th>时间</th><th>金额</th><th>状态</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td width="300">2014-09-09 12:00</td>
+                            <td>￥:200.00</td>
+                            <td>申请中</td>
+                        </tr>
+                        <tr>
+                            <td>014-09-09 12:00</td>
+                            <td>￥:200.00</td>
+                            <td>已转账</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div><!-- 提现列表 end -->
+
+            </div>
+
+        </div><!-- right-content end -->
+
+    </div><!-- 内容 end -->
+
+</div><!-- container-fluid end -->
+
+<!-- js begin -->
+<script rel="script" src="js/jquery.js"></script>
+<script rel="script">
+    $("#left").load("left.html");
+    $("#header").load("header.html");
+</script>
+<!-- js end -->
+
+
+</body>
+</html>
